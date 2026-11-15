@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e0005f5bdcdc44b4ab03778d23f08b65
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 286454
+  packageName: Retro Arsenal
+  packageVersion: 1.0.2
+  assetPath: Assets/Retro Arsenal/Prefabs/Combat/Damage/Blood/BloodDrip.prefab
+  uploadId: 680784

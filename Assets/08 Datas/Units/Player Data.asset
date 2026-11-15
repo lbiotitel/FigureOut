@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 531185ae78c21e7458c2fa1bb58d2069, type: 3}
+  m_Name: Player Data
+  m_EditorClassIdentifier: 
+  UnitType: 0
+  maxHp: 100
+  atk: 10
+  criDamage: 0
+  def: 10
+  criDef: 10
+  spd: 6
+  damageCorrection: 0.8
+  incomingDamage: 1
+  atkSpeed: 0
+  atkRange: 0
+  reloadSpeed: 0
+  MaxIgniteGauge: 5
+  MaxFreezeGauge: 5
+  MaxIrradiationGauge: 5
+  MaxCorrosionGauge: 5
+  MaxMarkedGauge: 5
+  MaxInjuryGauge: 5
+  IgniteAtkCount: 0
+  FreezeAtkCount: 0
+  IrradiationAtkCount: 0
+  CorrosionAtkCount: 0
+  MarkedAtkCount: 0
+  InjuryAtkCount: 0
+  IgniteImmunity: 0
+  FreezeImmunity: 0
+  IrradiationImmunity: 0
+  CorrosionImmunity: 0
+  MarkedImmunity: 0
+  InjuryImmunity: 0
+  unitName: Player
+  modelPrefab: {fileID: 1629322642476945901, guid: 7f1332b34f652ac478c42233be0f0311, type: 3}
+  sprintSpeed: 9
+  luck: 0
+  maxStamina: 100
+  maxHungry: 100
+  maxThirsty: 100
+  staminaRegenRate: 10
+  hungryDecayRate: 0.5
+  thirstyDecayRate: 0.8
+  survivalPenaltyDamage: 1

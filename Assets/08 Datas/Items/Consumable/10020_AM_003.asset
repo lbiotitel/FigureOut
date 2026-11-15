@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b489782f5919b294ba7b46d4988dcb3a, type: 3}
+  m_Name: 10020_AM_003
+  m_EditorClassIdentifier: Assembly-CSharp::ConsumableData
+  itemId: 10020_AM_003
+  itemName: 5.56mm
+  itemDescription: "\uB3CC\uACA9\uC18C\uCD1D\uC744 \uC0AC\uC6A9\uD560\uB54C \uD544\uC694\uD55C
+    \uD0C4\uC57D\uC774\uB2E4."
+  itemIcon: {fileID: 21300000, guid: c6e3d499bb870904db32fcc896d9f7d8, type: 3}
+  itemType: 1
+  rarity: 0
+  modelPrefab: {fileID: 1076159906071858042, guid: 04914dd215824c94d9269a07c95a3a63, type: 3}
+  maxStackCount: 200
+  price: 1
+  coolTime: 0
+  effects: []
+  references:
+    version: 2
+    RefIds: []

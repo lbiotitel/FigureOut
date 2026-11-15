@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SFX
+  m_EditorClassIdentifier: 
+  m_GroupName: SFX
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 226c97919ad21ef43ab7d8fc31a6b9f1
+  m_SerializeEntries:
+  - m_GUID: 030981c9eee2b6440a7d8224c40c0454
+    m_Address: 10010_WE_AR_001_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05fa9cdd8a2b5f1409273c9c17009e8e
+    m_Address: 10010_WE_SG_016_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bef7af2cb815c14cadff78bb98c9ccd
+    m_Address: Quest Complete Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11bcf67cc5e003e418c53ce802dc3dd8
+    m_Address: Step Sfx 1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18543a797d9854544b930b41c0766f17
+    m_Address: 10010_WE_PG_009_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c9300ec22ce7dd4d99fab419adc39de
+    m_Address: Hit Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ce8a13d36304654faa6adabf8cb8242
+    m_Address: 10010_WE_AR_006_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 307999d53ec76b945874536390103880
+    m_Address: 10010_WE_PG_002_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f9fbd156b1c4524b92a763e0d074869
+    m_Address: 10010_WE_PG_006_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48ab1e909b3d3d04db34bb8f61a15ce2
+    m_Address: Dead SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e14dafa14388404daa2100e0f21e88b
+    m_Address: sfx_ui_craft_click
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 560dcb7ef502ef14a983f700b12dc5a7
+    m_Address: 10010_WE_RG_003_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b2d1087a892aa948a15a90eefea962f
+    m_Address: Evolution Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6bce72e5357898148a67aedeef8b04ca
+    m_Address: 10010_WE_SG_015_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e733c436eca1194c863626845fc5c97
+    m_Address: Reload
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7867c3ae22c3b55439d29011aca392e4
+    m_Address: Repair Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bb921fbb2756a94eb76b3232b92fdb6
+    m_Address: 10010_WE_PG_001_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8509247c6bb75f34883cb099692914d5
+    m_Address: Step Sfx 2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 936580d4f05e2fc45996fd2906a950e9
+    m_Address: Equip SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 977e889392f6df4459b56a555b52a429
+    m_Address: 10010_WE_SG_004_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a508977e07b18ce4c9da93b5ca3de655
+    m_Address: Attribution Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a88d776d8338ac4458c9065609f2555e
+    m_Address: 10010_WE_AR_003_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afb7de6f43d19b24ab00364f5fb391ee
+    m_Address: 10010_WE_AR_005_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc503d6e0ab8c254d96d2e1785e28391
+    m_Address: sfx_ui_craft_progress
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bede70b35d4dd1d4b90b656788f91261
+    m_Address: 10010_WE_PG_005_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2e68ae0df0c1c24e905779b6725d7c0
+    m_Address: Quest Accept Sfx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca7f9ebcf9321584494de05cc0df874a
+    m_Address: sfx_ui_shop_open
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc4a3d4c87998764eb9c3c6ba30f1f99
+    m_Address: sfx_ui_shop_buy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d935bcb41fc5ee04e976a78b1c6c3083
+    m_Address: 10010_WE_PG_010_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5321f6c69809c941bb8cb54564c597b
+    m_Address: 10010_WE_RG_004_SFX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 12d257ca0e81c8944beaa9d8c874f399, type: 2}

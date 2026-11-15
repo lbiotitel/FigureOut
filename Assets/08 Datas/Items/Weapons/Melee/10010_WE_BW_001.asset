@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46dea54f8abe6e40ab71f7648e6bcd7, type: 3}
+  m_Name: 10010_WE_BW_001
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeWeaponData
+  itemId: 10010_WE_BW_001
+  itemName: "\uC57C\uAD6C \uBC29\uB9DD\uC774"
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 86e6d3cac7797d44d9173f9c862869b1, type: 3}
+  itemType: 0
+  rarity: 0
+  modelPrefab: {fileID: 5837432593780135170, guid: 937192a66c81e2a4e8283c6fb5d5c7f0, type: 3}
+  maxStackCount: 1
+  price: 0
+  equipmentType: 0
+  grabPos: {x: 0, y: 0, z: 0}
+  equipmentStats:
+  - statType: 4
+    modifireType: 1
+    value: 0.5
+  revolutionRecipeID: 
+  weaponRange: 0
+  weaponDamage: 0
+  weaponDelay: 0
+  soundSFX: 
+  firePos: {x: 0, y: 0, z: 0}

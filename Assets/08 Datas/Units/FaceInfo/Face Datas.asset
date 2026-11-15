@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317294bdb2265214fbf632e7679b13a7, type: 3}
+  m_Name: Face Datas
+  m_EditorClassIdentifier: 
+  faceInfos:
+  - faceIcon: {fileID: 21300000, guid: 9d2056dcf837a4c4ab662ffd4e65d641, type: 3}
+    faceMaterial: {fileID: 2100000, guid: eb0abc418e0e4af459f4d17d07e073d9, type: 2}
+  - faceIcon: {fileID: 21300000, guid: fac5a081943222b4ab3b8bcc324d1044, type: 3}
+    faceMaterial: {fileID: 2100000, guid: e6c495fac54a911488b25458e2643b1f, type: 2}
+  - faceIcon: {fileID: 21300000, guid: 193bf5ce06d0c964da2635b288c3421f, type: 3}
+    faceMaterial: {fileID: 2100000, guid: 456287515040ff04698a731ca85e4ccd, type: 2}
+  - faceIcon: {fileID: 21300000, guid: 219d44f5456a6aa498cf38c01e9ce197, type: 3}
+    faceMaterial: {fileID: 2100000, guid: 30af7b599066cc246a2d914638dc135b, type: 2}
+  - faceIcon: {fileID: 21300000, guid: 26eb6e643cdeaf54cb5b5d527fba85a0, type: 3}
+    faceMaterial: {fileID: 2100000, guid: cbd060127947047419e785a6f9fae768, type: 2}
+  - faceIcon: {fileID: 21300000, guid: e4e0668832ee2d843872826496c9f841, type: 3}
+    faceMaterial: {fileID: 2100000, guid: 670f30794aab78247ae4681664ab6349, type: 2}
+  - faceIcon: {fileID: 21300000, guid: 61a4d90e48abdf944bcb9211d2f5c115, type: 3}
+    faceMaterial: {fileID: 2100000, guid: 8cf518f37daf5c74e887f2a950e2546e, type: 2}
+  - faceIcon: {fileID: 21300000, guid: 062f011ad8bfbec44a4b23ca9d2cafe9, type: 3}
+    faceMaterial: {fileID: 2100000, guid: 01310289764a53f4b80a972350604a90, type: 2}

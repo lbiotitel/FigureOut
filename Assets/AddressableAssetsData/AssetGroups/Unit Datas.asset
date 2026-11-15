@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Unit Datas
+  m_EditorClassIdentifier: 
+  m_GroupName: Unit Datas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2a479cf7f15353945ad26d00bea65ae4
+  m_SerializeEntries:
+  - m_GUID: 4962fd591473f4746b9e7d8cee8ac89c
+    m_Address: 2004_1_1_011
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5733f42c0556dd043820f00beda4fbd0
+    m_Address: 2002_3_2_007
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69c2cfaed75c9c4468bfaf9106b9fd93
+    m_Address: 2001_1_1_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 886de2b5ef2eef54da2c304423070360
+    m_Address: 2001_1_1_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92d97cddca58e68438207194ff48c33f
+    m_Address: Player Data
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b40ac2be8d904eb48874ef0434811cfc
+    m_Address: NormalEnemy1Data
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed8983c90554fac4883b41061b6393ae
+    m_Address: 2003_1_2_009
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e736be5645cb1dc43bf3695d426f3bab, type: 2}
+    - {fileID: 11400000, guid: 32700667c4afefb41ae3167cf5b7bc46, type: 2}

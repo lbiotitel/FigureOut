@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Armor Datas
+  m_EditorClassIdentifier: 
+  m_GroupName: Armor Datas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9d7d360f9f30c234d80fc3dcb5c265ff
+  m_SerializeEntries:
+  - m_GUID: 0a0058402afc7224585b55538e1aa999
+    m_Address: 10010_AR_BA_004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1766413863858214fadb482b87bee3d5
+    m_Address: 10010_AR_HE_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1976c55d4f327d048a3f32ee33e8ca0e
+    m_Address: 10010_AR_BA_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b381bd420d2db74397f601848be90e5
+    m_Address: 10010_AR_BA_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f38723e4c42bbd40bfc806baf068a63
+    m_Address: 10010_MH_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48bb084399140e0458d209d3f695f75d
+    m_Address: 10010_AR_HE_004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ce5de5dfe672164ab714266578975c3
+    m_Address: 10010_MH_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a19e0014935af52459a43e67a5b482ad
+    m_Address: 10010_AR_HE_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4d5dbf71069cc045b6a919e16bf577f
+    m_Address: 10010_MH_004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b75f90e82a745704185807c2c39d3f48
+    m_Address: 10010_AR_BA_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7df810e544e83a4a9778157121f2760
+    m_Address: 10010_MH_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee60aad5ac064a6418bae0ab7750147d
+    m_Address: 10010_AR_HE_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: dab6c3249f9f9194997a560e9098b564, type: 2}
+    - {fileID: 11400000, guid: ae36b54a3f6ebb4488e4d7aa75000899, type: 2}

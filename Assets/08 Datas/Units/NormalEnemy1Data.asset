@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc425aa22a14dd4784fce4b9650fd79, type: 3}
+  m_Name: NormalEnemy1Data
+  m_EditorClassIdentifier: 
+  UnitType: 1
+  maxHp: 100
+  atk: 10
+  criDamage: 1.5
+  def: 10
+  criDef: 10
+  spd: 5
+  damageCorrection: 0.8
+  incomingDamage: 1
+  atkSpeed: 0
+  atkRange: 0
+  reloadSpeed: 0
+  MaxIgniteGauge: 5
+  MaxFreezeGauge: 5
+  MaxIrradiationGauge: 5
+  MaxCorrosionGauge: 5
+  MaxMarkedGauge: 5
+  MaxInjuryGauge: 5
+  IgniteAtkCount: 0
+  FreezeAtkCount: 0
+  IrradiationAtkCount: 0
+  CorrosionAtkCount: 0
+  MarkedAtkCount: 0
+  InjuryAtkCount: 0
+  IgniteImmunity: 0
+  FreezeImmunity: 0
+  IrradiationImmunity: 0
+  CorrosionImmunity: 0
+  MarkedImmunity: 0
+  InjuryImmunity: 0
+  unitName: nomalEnemy1
+  modelPrefab: {fileID: 8884549825440276360, guid: 37ee6333f1b7c5f4891d2c74771b20a5, type: 3}
+  aiStrategy: {fileID: 11400000, guid: c9779d6b31b23c54ebbfd66bb08253e9, type: 2}
+  viewDistance: 10
+  viewAngle: 90
+  aggressionWeight: 1
+  defenseWeight: 1
+  optimalRange: 15
+  patrolRMax: 10
+  WeaponID: 10010_WE_AR_001
+  EnemyType: 0
+  maxAggro: 100
+  aggroDecayRate: 5
+  UnitDropTableID: Drop_2001_1_1_001

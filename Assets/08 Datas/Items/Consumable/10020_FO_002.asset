@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b489782f5919b294ba7b46d4988dcb3a, type: 3}
+  m_Name: 10020_FO_002
+  m_EditorClassIdentifier: Assembly-CSharp::ConsumableData
+  itemId: 10020_FO_002
+  itemName: " \uC0AC\uCF00"
+  itemDescription: "\uC220\uC740 \uC88B\uC740 \uC74C\uB8CC\uC774\uB2E4."
+  itemIcon: {fileID: 21300000, guid: f1e9374bb514a484ea4d68aa2c78fe7c, type: 3}
+  itemType: 1
+  rarity: 1
+  modelPrefab: {fileID: 3915601689578757495, guid: 697f41219b561b64880cc08e7d6c4b88, type: 3}
+  maxStackCount: 5
+  price: 2
+  coolTime: 0
+  effects:
+  - rid: 8902542341168431104
+  references:
+    version: 2
+    RefIds:
+    - rid: 8902542341168431104
+      type: {class: DurationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        duration: 6
+        tickInterval: 0.5
+        statContainers:
+        - statType: 19
+          modifireType: 0
+          value: 3

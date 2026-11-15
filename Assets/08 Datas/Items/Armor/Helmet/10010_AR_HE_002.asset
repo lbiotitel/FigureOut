@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38596855d3ee947468adc70e52e9f45d, type: 3}
+  m_Name: 10010_AR_HE_002
+  m_EditorClassIdentifier: Assembly-CSharp::ArmorData
+  itemId: 10010_AR_HE_002
+  itemName: "\uC624\uD1A0\uBC14\uC774 \uD5EC\uBA67"
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 97efb662d9ce3e94691b5445fb25cd46, type: 3}
+  itemType: 0
+  rarity: 1
+  modelPrefab: {fileID: 1929922162888265699, guid: 6e528a9cd0f16f548b2428bdfe5e104d, type: 3}
+  maxStackCount: 1
+  price: 100
+  equipmentType: 1
+  grabPos: {x: 0, y: 0, z: 0}
+  equipmentStats:
+  - statType: 12
+    modifireType: 0
+    value: 10
+  - statType: 6
+    modifireType: 0
+    value: 15
+  - statType: 7
+    modifireType: 0
+    value: 15
+  - statType: 2
+    modifireType: 1
+    value: 0.2
+  - statType: 8
+    modifireType: 0
+    value: 1
+  - statType: 9
+    modifireType: 0
+    value: 1
+  revolutionRecipeID: 
+  maxDurability: 100
+  def: 0
+  durability: 0

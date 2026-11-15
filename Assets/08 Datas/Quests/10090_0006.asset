@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e56228a24f1bd439289477ad9f0299, type: 3}
+  m_Name: 10090_0006
+  m_EditorClassIdentifier: 
+  questID: 10090_0006
+  questName: "\uB09C\uB3D9 \uBD80\uB9AC\uAE30"
+  questDescription: "\uC0BC\uAC01\uD68C \uAC74\uB2EC \uCC98\uCE58"
+  nextQuestID: []
+  questType: 0
+  questRweardItems:
+  - itemID: 10010_WE_SG_004
+    amount: 1
+  dollarReward: 400
+  questObjectives:
+  - objectiveID: 2001_1_1_001
+    requiredAmount: 4

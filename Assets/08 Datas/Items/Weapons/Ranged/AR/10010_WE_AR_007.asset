@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5896073882483745ba984d9cf9afd45, type: 3}
+  m_Name: 10010_WE_AR_007
+  m_EditorClassIdentifier: 
+  itemId: 10010_WE_AR_007
+  itemName: AK-V Zenitco
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: e71a3c70934e2574c8d1243d29df73a5, type: 3}
+  itemType: 0
+  rarity: 3
+  modelPrefab: {fileID: 2107894787366423910, guid: 291468b92bacfd046a5c3e79f0e85d9f, type: 3}
+  maxStackCount: 1
+  price: 500
+  equipmentType: 0
+  grabPos: {x: 0, y: 0.05, z: -0.22}
+  equipmentStats:
+  - statType: 0
+    modifireType: 0
+    value: 15
+  - statType: 4
+    modifireType: 0
+    value: 5
+  - statType: 1
+    modifireType: 0
+    value: 2
+  - statType: 10
+    modifireType: 0
+    value: 1
+  - statType: 5
+    modifireType: 0
+    value: 5
+  revolutionRecipeID: 
+  maxDurability: 100
+  soundSFX: 10010_WE_AR_001_SFX
+  firePos: {x: 0, y: 0.25, z: 1.17}
+  weaponType: 1
+  ammoType: 1
+  reloadTime: 1
+  magazineSize: 30
+  recoil: 0.252
+  soundSize: 0
+  projectileData:
+    motionType: 0
+    projectileLifeTime: 5
+    projectileSpeed: 180
+    projectileCount: 1
+    projectileSpreadAngle: 3
+    fireEffectPrefab: {fileID: 7900850632148405980, guid: f49e91db36ef88445a096703b6587e75, type: 3}
+    projectilePrefab: {fileID: 5029068388578674603, guid: e01eed44cc5915b4fb834dc517caf731, type: 3}

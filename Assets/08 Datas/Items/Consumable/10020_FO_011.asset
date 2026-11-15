@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b489782f5919b294ba7b46d4988dcb3a, type: 3}
+  m_Name: 10020_FO_011
+  m_EditorClassIdentifier: Assembly-CSharp::ConsumableData
+  itemId: 10020_FO_011
+  itemName: "\uD53C\uC790"
+  itemDescription: "\uB9DB\uC788\uB294 \uD53C\uC790 \uD53C\uC790\uAC00 \uC88B\uC544"
+  itemIcon: {fileID: 21300000, guid: 96a4a04700f76d944a25368b75260a46, type: 3}
+  itemType: 1
+  rarity: 1
+  modelPrefab: {fileID: 4143857293018134265, guid: 8ff2e9472b8a0114798b7980f5b61dc3, type: 3}
+  maxStackCount: 5
+  price: 20
+  coolTime: 0
+  effects:
+  - rid: 3773469228187779072
+  references:
+    version: 2
+    RefIds:
+    - rid: 3773469228187779072
+      type: {class: ImpactEffect, ns: , asm: Assembly-CSharp}
+      data:
+        statContainers:
+        - statType: 18
+          modifireType: 0
+          value: 80
+        - statType: 19
+          modifireType: 0
+          value: 80

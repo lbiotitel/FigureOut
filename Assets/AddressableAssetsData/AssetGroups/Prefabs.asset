@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 167952460a05e7e4b897bdbbfa7d93a5
+  m_SerializeEntries:
+  - m_GUID: 018647a3b716ca44dab6a66ffe555dea
+    m_Address: Freeze Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05f9dba61de5d3044989c9bae34d7200
+    m_Address: Damage Text Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08d85d8d788f0f54c9923a6b377d35a0
+    m_Address: Canvas_Shop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17890ae26074dbf428066c3a2221f567
+    m_Address: Corrosion Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18b0df1172d1bf6439ec4bc5401ddcca
+    m_Address: Ignite Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a811dc0e15e50f4b8df74fc3bf8516f
+    m_Address: Dead Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38d64d0dd0cf4354f9daefb6f8bc603a
+    m_Address: Ranged Weapon Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6cd69541df48c92488b39593ce022490
+    m_Address: Melee Weapon Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f1332b34f652ac478c42233be0f0311
+    m_Address: Player
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82180093af9fc304f9883cc7796fdb08
+    m_Address: Inventory Slot UI Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94fdc2661dd6aaa4fa75e5323aac1fd1
+    m_Address: Quest Log UI Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a5706403974dfb4198e81584c811708
+    m_Address: Drop Item Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b8326370bc6b584d974a740093eb8eb
+    m_Address: Canvas_Craft
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c72003b16ba94c447b1e8250614613ba
+    m_Address: Irradiation Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ceed2cecc023d7a4385583f8801ad3c3
+    m_Address: Marked Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d670ca46b7fabd5468e5808fd51cd28d
+    m_Address: EnemySpawner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0005f5bdcdc44b4ab03778d23f08b65
+    m_Address: Injury Particle Prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e04bfbabf0a8a7d4884e7031e18aade3, type: 2}
+    - {fileID: 11400000, guid: c67969d823f4be942a7896c83ba839a2, type: 2}

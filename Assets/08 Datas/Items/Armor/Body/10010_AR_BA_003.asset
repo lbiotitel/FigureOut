@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38596855d3ee947468adc70e52e9f45d, type: 3}
+  m_Name: 10010_AR_BA_003
+  m_EditorClassIdentifier: Assembly-CSharp::ArmorData
+  itemId: 10010_AR_BA_003
+  itemName: "\uC0C1\uD558\uCCB4 \uC678\uACE8\uACA9"
+  itemDescription: "\uC21C\uAC04\uC801\uC778 \uD798 \uBC1C\uD718\uC758 \uC815\uB3C4\uB97C
+    \uAC15\uD654\uD558\uB294 \uC678\uACE8\uACA9\uC774\uB2E4."
+  itemIcon: {fileID: 21300000, guid: e8e3684cfc4df974d999d6e41df921d5, type: 3}
+  itemType: 0
+  rarity: 2
+  modelPrefab: {fileID: 6193232863174632924, guid: fb175beb772447e4fae9ee30dedae0bf, type: 3}
+  maxStackCount: 1
+  price: 140
+  equipmentType: 2
+  grabPos: {x: 0, y: 0, z: 0}
+  equipmentStats:
+  - statType: 13
+    modifireType: 0
+    value: 140
+  - statType: 6
+    modifireType: 0
+    value: 15
+  - statType: 7
+    modifireType: 0
+    value: 10
+  - statType: 0
+    modifireType: 0
+    value: 14
+  - statType: 2
+    modifireType: 0
+    value: 0.3
+  - statType: 5
+    modifireType: 0
+    value: 1.5
+  - statType: 4
+    modifireType: 0
+    value: 2
+  - statType: 5
+    modifireType: 0
+    value: 1.5
+  - statType: 8
+    modifireType: 0
+    value: 1.2
+  revolutionRecipeID: 
+  maxDurability: 150
+  def: 0
+  durability: 0

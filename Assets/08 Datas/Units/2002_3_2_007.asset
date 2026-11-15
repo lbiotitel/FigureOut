@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc425aa22a14dd4784fce4b9650fd79, type: 3}
+  m_Name: 2002_3_2_007
+  m_EditorClassIdentifier: 
+  UnitType: 1
+  unitID: 2002_3_2_007
+  maxHp: 360
+  atk: 180
+  criDamage: 1.5
+  def: 13
+  criDef: 15
+  spd: 10
+  damageCorrection: 0.8
+  incomingDamage: 1
+  atkSpeed: 0
+  atkRange: 30
+  reloadSpeed: 0
+  MaxIgniteGauge: 5
+  MaxFreezeGauge: 5
+  MaxIrradiationGauge: 5
+  MaxCorrosionGauge: 5
+  MaxMarkedGauge: 5
+  MaxInjuryGauge: 5
+  IgniteAtkCount: 0
+  FreezeAtkCount: 0
+  IrradiationAtkCount: 0
+  CorrosionAtkCount: 0
+  MarkedAtkCount: 0
+  InjuryAtkCount: 0
+  IgniteImmunity: 0
+  FreezeImmunity: 0
+  IrradiationImmunity: 0
+  CorrosionImmunity: 0
+  MarkedImmunity: 0
+  InjuryImmunity: 0
+  unitName: "\uC815\uC721\uBA74\uCCB4 \uC774\uC911\uCCA9\uC790"
+  modelPrefab: {fileID: 6188497607314231866, guid: 18aefa40a6ecd344a9f9a2fde70f5903, type: 3}
+  aiStrategy: {fileID: 11400000, guid: 1cbe46c1e08edcf46ab7b008afc2bdef, type: 2}
+  viewDistance: 20
+  viewAngle: 90
+  aggressionWeight: 1
+  defenseWeight: 1
+  optimalRange: 15
+  patrolRMax: 10
+  WeaponID: 10010_WE_RG_003
+  EnemyType: 0
+  maxAggro: 100
+  aggroDecayRate: 5
+  UnitDropTableID: 10070_003

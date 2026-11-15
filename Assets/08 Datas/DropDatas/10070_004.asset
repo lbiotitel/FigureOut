@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69191a6a31c23f244915125867ee983f, type: 3}
+  m_Name: 10070_004
+  m_EditorClassIdentifier: 
+  dollarAmount: 30
+  essentialDropTableInfos: []
+  dropAmount: 10
+  dropTableInfos:
+  - ItemId: 10020_AM_002
+    DropWeight: 40
+  - ItemId: 10030_1_0010
+    DropWeight: 60
+  - ItemId: 10030_1_0011
+    DropWeight: 60
+  - ItemId: 10030_1_0012
+    DropWeight: 5
+  - ItemId: 10010_WE_RG_007
+    DropWeight: 1
+  - ItemId: 10010_AR_BA_003
+    DropWeight: 2
+  - ItemId: 10010_AR_HE_003
+    DropWeight: 2
+  - ItemId: 10020_RC_002
+    DropWeight: 8

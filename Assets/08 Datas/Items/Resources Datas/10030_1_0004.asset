@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5950c0d140515fb4aa15de861ab0d49e, type: 3}
+  m_Name: 10030_1_0004
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceData
+  itemId: 10030_1_0004
+  itemName: "\uB77C\uC774\uD130"
+  itemDescription: "\uB2F4\uBC30 \uAC12\uC740 \uB354 \uC62C\uB77C\uC57C \uD55C\uB2E4."
+  itemIcon: {fileID: 21300000, guid: cbba0fe9f4fd6b04a958602c0f8a4a70, type: 3}
+  itemType: 2
+  rarity: 0
+  modelPrefab: {fileID: 8624811497398161331, guid: cb98f43a729189a418405ee45c62db20, type: 3}
+  maxStackCount: 30
+  price: 0

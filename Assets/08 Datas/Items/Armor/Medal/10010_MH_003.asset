@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38596855d3ee947468adc70e52e9f45d, type: 3}
+  m_Name: 10010_MH_003
+  m_EditorClassIdentifier: Assembly-CSharp::ArmorData
+  itemId: 10010_MH_003
+  itemName: "\"\uAC19\uC740 \uB192\uC774\""
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 38c55069e5adbb240a9eab35b1314061, type: 3}
+  itemType: 0
+  rarity: 2
+  modelPrefab: {fileID: 5502222626659821475, guid: e7898e0db8ca27546b6b5414babe1da6, type: 3}
+  maxStackCount: 1
+  price: 0
+  equipmentType: 3
+  grabPos: {x: 0, y: 0, z: 0}
+  equipmentStats:
+  - statType: 12
+    modifireType: 0
+    value: 70
+  - statType: 6
+    modifireType: 0
+    value: 40
+  - statType: 7
+    modifireType: 0
+    value: 30
+  - statType: 0
+    modifireType: 0
+    value: 5
+  - statType: 4
+    modifireType: 1
+    value: 0
+  - statType: 8
+    modifireType: 0
+    value: 2
+  revolutionRecipeID: 
+  maxDurability: 1

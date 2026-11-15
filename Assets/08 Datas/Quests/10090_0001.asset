@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e56228a24f1bd439289477ad9f0299, type: 3}
+  m_Name: 10090_0001
+  m_EditorClassIdentifier: 
+  questID: 10090_0001
+  questName: "\uC5EC\uC815\uC758 \uC2DC\uC791!"
+  questDescription: "\uC0C1\uC790\uB97C \uC5F4\uC5B4 \uAD8C\uCD1D\uC744 \uC5BB\uC73C\uC138\uC694"
+  nextQuestID:
+  - 10090_0002
+  questType: 1
+  questRweardItems:
+  - itemID: 10020_AM_001
+    amount: 100
+  dollarReward: 0
+  questObjectives:
+  - objectiveID: 10010_WE_PG_001
+    requiredAmount: 1

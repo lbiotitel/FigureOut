@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5896073882483745ba984d9cf9afd45, type: 3}
+  m_Name: 10010_WE_SG_004
+  m_EditorClassIdentifier: Assembly-CSharp::RangedWeaponData
+  itemId: 10010_WE_SG_004
+  itemName: "\uB354\uBE14 \uBC30\uB7F4"
+  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 119ca6f346fff4e43a07e4773de8b7e1, type: 3}
+  itemType: 0
+  rarity: 0
+  modelPrefab: {fileID: 6100958088391548881, guid: d6761ec305add5d4fbf477e216d8b235, type: 3}
+  maxStackCount: 1
+  price: 0
+  equipmentType: 0
+  grabPos: {x: 0.09, y: -0.09, z: 0}
+  equipmentStats:
+  - statType: 5
+    modifireType: 0
+    value: 20
+  - statType: 0
+    modifireType: 0
+    value: 20
+  - statType: 4
+    modifireType: 0
+    value: 0.5
+  - statType: 1
+    modifireType: 0
+    value: 1.5
+  - statType: 10
+    modifireType: 0
+    value: 1.5
+  revolutionRecipeID: 10050_0008
+  maxDurability: 100
+  soundSFX: 10010_WE_SG_004_SFX
+  firePos: {x: 0, y: 0.2, z: 1.81}
+  weaponType: 2
+  ammoType: 3
+  reloadTime: 0.5
+  magazineSize: 2
+  recoil: 0.6
+  soundSize: 10
+  ragnedWeaponType: 0
+  projectileData:
+    motionType: 0
+    projectileLifeTime: 5
+    projectileSpeed: 100
+    projectileCount: 5
+    projectileSpreadAngle: 20
+    fireEffectPrefab: {fileID: 7900850632148405980, guid: f49e91db36ef88445a096703b6587e75, type: 3}
+    projectilePrefab: {fileID: 5029068388578674603, guid: e01eed44cc5915b4fb834dc517caf731, type: 3}

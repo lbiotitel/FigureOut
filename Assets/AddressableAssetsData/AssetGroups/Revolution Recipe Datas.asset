@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Revolution Recipe Datas
+  m_EditorClassIdentifier: 
+  m_GroupName: Revolution Recipe Datas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0552c41ffb750f246997db0e419dd406
+  m_SerializeEntries:
+  - m_GUID: 105b9be7add3f7c4b8934100c86701d9
+    m_Address: 10050_0013
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15600ae55802db8429851b715811bd52
+    m_Address: 10050_0001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1588267a00234e94eb6f1087004a9939
+    m_Address: 10050_0016
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 553f2d17aecb02d499b7d60eb946edf8
+    m_Address: 10050_0014
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 596868ec568697c46b0ed506eb56cd58
+    m_Address: 10050_0008
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5df8ed627c00be44186bde50f37a2c65
+    m_Address: 10050_0010
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 676eb85eb8e26744fbd8037949bf4892
+    m_Address: 10050_0017
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83ebad848f4ca9e41b4e5a66c8afafe0
+    m_Address: 10050_0006
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88487b56ed636e9498233b02407181ad
+    m_Address: 10050_0012
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e49b3d89fed9b14489bccb685caa00d
+    m_Address: 10050_0005
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97f7755fcc73b8145b3d4fa477e21106
+    m_Address: 10050_0004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a87290ca727fd4469736b20a3d1fa1b
+    m_Address: 10050_0019
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e32bbd6c489267479f204494edfe8e1
+    m_Address: 10050_0018
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a55eae79f04302345bda93b18207fef7
+    m_Address: 10050_0007
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b06e0efdd00d09241804839fbe3ce558
+    m_Address: 10050_0002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4595d487c308d84d810a7ec61ab5126
+    m_Address: 10050_0009
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdb211e3ad256b242aedbb1d5425162a
+    m_Address: 10050_0011
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd425e91778b66e41aa1b3e25f5e46bb
+    m_Address: 10050_0020
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e07ea75a706366440bbb03bae3c0e27e
+    m_Address: 10050_0003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eae288da1c9fb144dbd065f6dd192c83
+    m_Address: 10050_0015
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 89b5ca3dda5cd27489dfc4d3628f5cc7, type: 2}
+    - {fileID: 11400000, guid: 832dafbf16ca2fc45ae427b4d1cfa5ad, type: 2}

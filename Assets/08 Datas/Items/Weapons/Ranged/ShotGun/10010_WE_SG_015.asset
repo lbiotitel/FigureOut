@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5896073882483745ba984d9cf9afd45, type: 3}
+  m_Name: 10010_WE_SG_015
+  m_EditorClassIdentifier: 
+  itemId: 10010_WE_SG_015
+  itemName: Horizen
+  itemDescription: "\uC9C0\uD3C9\uC120 \uC704\uC5D0\uC11C"
+  itemIcon: {fileID: 21300000, guid: 947a35be939d4ef45a4a505fa7253323, type: 3}
+  itemType: 0
+  rarity: 3
+  modelPrefab: {fileID: 1229935692544260902, guid: c78d426fc51c39e408d114dcb101ffd6, type: 3}
+  maxStackCount: 1
+  price: 0
+  equipmentType: 0
+  grabPos: {x: 0, y: 0.04, z: 0}
+  equipmentStats:
+  - statType: 5
+    modifireType: 0
+    value: 20
+  - statType: 0
+    modifireType: 0
+    value: 20
+  - statType: 4
+    modifireType: 0
+    value: 4
+  - statType: 1
+    modifireType: 0
+    value: 1.5
+  - statType: 10
+    modifireType: 0
+    value: 1.5
+  revolutionRecipeID: 
+  maxDurability: 100
+  soundSFX: 10010_WE_SG_015_SFX
+  firePos: {x: 0, y: 0.31, z: 1.17}
+  weaponType: 2
+  ammoType: 3
+  reloadTime: 2
+  magazineSize: 100
+  recoil: 0.4
+  soundSize: 0
+  projectileData:
+    motionType: 0
+    projectileLifeTime: 1
+    projectileSpeed: 100
+    projectileCount: 20
+    projectileSpreadAngle: 60
+    fireEffectPrefab: {fileID: 7900850632148405980, guid: f49e91db36ef88445a096703b6587e75, type: 3}
+    projectilePrefab: {fileID: 5029068388578674603, guid: e01eed44cc5915b4fb834dc517caf731, type: 3}

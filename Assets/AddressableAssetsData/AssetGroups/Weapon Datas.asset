@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapon Datas
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapon Datas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 66ed3c40341e5fa45847476082be67c1
+  m_SerializeEntries:
+  - m_GUID: 0360091c94929f542a5b3fb306166402
+    m_Address: 10010_WE_SG_004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c1881b1f3d76464294e66c329e28b5d
+    m_Address: 10010_WE_PG_005
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ad854ff44a78934b8ede05234f41062
+    m_Address: 10010_WE_AR_009
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27187bd1efefa0a4e99c3b06041677b9
+    m_Address: 10010_WE_RG_007
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4817e752fbb65094f9776bfe4b4be43a
+    m_Address: 10010_WE_BW_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f0acdf1de3e72443bd8f9737cc683ab
+    m_Address: 10010_WE_SG_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 501ba41b4110d11448cae9b429ea1463
+    m_Address: 10010_WE_RG_004
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5354784b0545b0a45903601686d47d53
+    m_Address: 10010_WE_AR_008
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 559a37f20ab4c784b8c5b6a6266a945e
+    m_Address: 10010_WE_SG_015
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 599b215a93f62b842a5002750461b887
+    m_Address: 10010_WE_AR_006
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e9113ddc5ab228448ca3ae967ce9c59
+    m_Address: 10010_WE_PG_006
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 704fdf583ef53ac41aec3ca68469ec2d
+    m_Address: 10010_WE_RG_008
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7334e75ec9786164090ab4746597724c
+    m_Address: 10010_WE_PG_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7375e946bb3b5a8489d6bd1c08f9ddc6
+    m_Address: 10010_WE_SG_011
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83fe35381f3e04843997c1f9195c8818
+    m_Address: 10010_WE_PG_009
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86e6a0e9ad7b7684d9076953211b37f4
+    m_Address: 10010_WE_AR_010
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99457de3adbbf044e9f46f036d717f9e
+    m_Address: 10010_WE_RG_011
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b08e26fc65740a04fa9cc36927ad5a32
+    m_Address: 10010_WE_RG_012
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b67c2379b17233a40a5bfeb6a1a92d33
+    m_Address: 10010_WE_SG_016
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bed9f3979a5074e4d84a15313f155c59
+    m_Address: 10010_WE_SG_012
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c55a14a2f44346d469bdf3c1e8ec67b0
+    m_Address: 10010_WE_AR_005
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cab4e385b228a704c8d575423124c0f1
+    m_Address: 10010_WE_SG_007
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb86e4ed90265374aaee4fe7c41547cb
+    m_Address: 10010_WE_SG_008
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccf71db707de9bd43921eee4d1d42104
+    m_Address: 10010_WE_PG_010
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cee7a31257e15ae429bc92e128787dee
+    m_Address: 10010_WE_PG_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0283cdcc62f9df42bfca5de67812272
+    m_Address: 10010_WE_AR_007
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2d78191e8a867e479bd4dce66ebbbb0
+    m_Address: 10010_WE_RG_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f68b595621c4735459c4e462dd206b73
+    m_Address: 10010_WE_AR_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f85517367b6fc184b8406a4bfcd87a3d
+    m_Address: 10010_WE_AR_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 42a78d493ed22384b9e4b55384b7d863, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 96e583f996613f845bec870592bde05b, type: 2}
+    - {fileID: 11400000, guid: 610d8256e46ebd64fa7878813c487fc7, type: 2}
