@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-//Äù½ºÆ®ÀÇ ÀÚ¼¼ÇÑ Á¤º¸¸¦ ±×¸®´Â UI ÀÔ´Ï´Ù.
+//í€˜ìŠ¤íŠ¸ì˜ ìì„¸í•œ ì •ë³´ë¥¼ ê·¸ë¦¬ëŠ” UI ì…ë‹ˆë‹¤.
 public class QuestDetailUI : MonoBehaviour
 {
     [Header("Detail UI")]
@@ -69,22 +69,22 @@ public class QuestDetailUI : MonoBehaviour
 
         if (quest.QuestState == EQuestState.BeforeStart)
         {
-            questButtonText.text = "Äù½ºÆ® ½ÃÀÛ";
+            questButtonText.text = "í€˜ìŠ¤íŠ¸ ì‹œì‘";
             questButton.enabled = true;
         }
         else if (quest.QuestState == EQuestState.InProgress)
         {
-            questButtonText.text = "ÁøÇàÁß...";
+            questButtonText.text = "ì§„í–‰ì¤‘...";
             questButton.enabled = false;
         }
         else if (quest.QuestState == EQuestState.Completed)
         {
-            questButtonText.text = "º¸»ó ¹Ş±â";
+            questButtonText.text = "ë³´ìƒ ë°›ê¸°";
             questButton.enabled = true;
         }
         else if (quest.QuestState == EQuestState.RewardClaimed)
         {
-            questButtonText.text = "Äù½ºÆ® ¿Ï·á";
+            questButtonText.text = "í€˜ìŠ¤íŠ¸ ì™„ë£Œ";
             questButton.enabled = false;
         }
     }
@@ -95,7 +95,7 @@ public class QuestDetailUI : MonoBehaviour
         questObjectiveContent.SetActive(true);
 
         string res = "";
-        //Äù½ºÆ® Á¾·ù¿¡ µû¶ó ´Ù¸£°Ô ·»´õ¸µ
+        //í€˜ìŠ¤íŠ¸ ì¢…ë¥˜ì— ë”°ë¼ ë‹¤ë¥´ê²Œ ë Œë”ë§
         if (quest is CountedQuest)
         {
             CountedQuest countedQuest = quest as CountedQuest;
@@ -114,7 +114,7 @@ public class QuestDetailUI : MonoBehaviour
 
                     if (enemyData == null)
                     {
-                        Logger.LogError($"Äù½ºÆ®¿¡ µî¸¤ÇÑ {objectiveID}´Â Àß¸øµÈ Àû ID ÀÔ´Ï´Ù");
+                        Logger.LogError($"í€˜ìŠ¤íŠ¸ì— ë“±ë¥µí•œ {objectiveID}ëŠ” ì˜ëª»ëœ ì  ID ì…ë‹ˆë‹¤");
                         continue;
                     }
 
@@ -125,7 +125,7 @@ public class QuestDetailUI : MonoBehaviour
                     ItemData itemData = Managers.Data.GetData<ItemData>(objectiveID);
                     if (itemData == null)
                     {
-                        Logger.LogError($"Äù½ºÆ®¿¡ µî¸¤ÇÑ {objectiveID}´Â Àß¸øµÈ ¾ÆÀÌÅÛ ID ÀÔ´Ï´Ù");
+                        Logger.LogError($"í€˜ìŠ¤íŠ¸ì— ë“±ë¥µí•œ {objectiveID}ëŠ” ì˜ëª»ëœ ì•„ì´í…œ ID ì…ë‹ˆë‹¤");
                         continue;
                     }
 
@@ -141,7 +141,7 @@ public class QuestDetailUI : MonoBehaviour
     }
 
 
-    //º¸»ó ¸®¿öµå ±×¸®±â
+    //ë³´ìƒ ë¦¬ì›Œë“œ ê·¸ë¦¬ê¸°
     private void DrawRewardUI(QuestBase quest)
     {
         rootContent.gameObject.SetActive(true);
@@ -156,7 +156,7 @@ public class QuestDetailUI : MonoBehaviour
             ItemData itemData = Managers.Data.GetData<ItemData>(questItemRewards[i].itemID);
             if (itemData == null)
             {
-                Logger.LogError($"Äù½ºÆ®¿¡ µî·ÏµÈ {questItemRewards[i].itemID}´Â Àß¸øµÈ ¾ÆÀÌÅÛ ID ÀÔ´Ï´Ù");
+                Logger.LogError($"í€˜ìŠ¤íŠ¸ì— ë“±ë¡ëœ {questItemRewards[i].itemID}ëŠ” ì˜ëª»ëœ ì•„ì´í…œ ID ì…ë‹ˆë‹¤");
                 continue;
             }
 

@@ -13,12 +13,12 @@ public class KillQuest : CountedQuest
         Managers.Event.AddEvent<EnemyDiedEvent>(HandleEnemyDiedEvent);
     }
 
-    //¾î¶² ÀûÀÌ Á×¾úÀ» ¶§ ÀÌº¥Æ®°¡ ¹ß»ı, ±× ÀÌº¥Æ®¸¦ ¹Ş¾Æ¼­ Äù½ºÆ® ÁøÇà »óÈ²À» ¾÷µ¥ÀÌÆ®
+    //ì–´ë–¤ ì ì´ ì£½ì—ˆì„ ë•Œ ì´ë²¤íŠ¸ê°€ ë°œìƒ, ê·¸ ì´ë²¤íŠ¸ë¥¼ ë°›ì•„ì„œ í€˜ìŠ¤íŠ¸ ì§„í–‰ ìƒí™©ì„ ì—…ë°ì´íŠ¸
     private void HandleEnemyDiedEvent(EnemyDiedEvent enemyDiedEvent)
     {
         string enemyID = enemyDiedEvent.enemy.enemyData.unitID;
 
-        Logger.LogWarning($"{enemyID} °¡ Á×À½");
+        Logger.LogWarning($"{enemyID} ê°€ ì£½ìŒ");
 
         List<QuestObjective> objectives = countedData.QuestObjectives;
         for (int i = 0; i < objectives.Count; i++)
@@ -26,7 +26,7 @@ public class KillQuest : CountedQuest
             if (enemyID == objectives[i].ObjectiveID)
             {
                 currentCount[i]++;
-                UpdateQuestState(EQuestState.InProgress); //ui º¯°æÀ» À§ÇØ inProgress·Î ¾÷µ¥ÀÌÆ®
+                UpdateQuestState(EQuestState.InProgress); //ui ë³€ê²½ì„ ìœ„í•´ inProgressë¡œ ì—…ë°ì´íŠ¸
             }
         }
 

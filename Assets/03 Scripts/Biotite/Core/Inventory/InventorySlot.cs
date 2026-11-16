@@ -61,19 +61,19 @@ public class InventorySlot : IComparable<InventorySlot>
 
     internal void AssignItem(InventorySlot inventorySlot)
     {
-        //°°Àº ¾ÆÀÌÅÛÀÏ ½Ã ¼ö·®¸¸ ³Ñ°Ü ÁÜ
+        //ê°™ì€ ì•„ì´í…œì¼ ì‹œ ìˆ˜ëŸ‰ë§Œ ë„˜ê²¨ ì¤Œ
         if (itemData != null && inventorySlot.itemData != null && itemData.ItemID == inventorySlot.itemData.ItemID)
             AddToStack(inventorySlot.stackSize);
         else
         {
-            //´Ù¸¥ ¾ÆÀÌÅÛÀÏ½Ã »õ·Î¿î ¾ÆÀÌÅÛ ÇÒ´ç
+            //ë‹¤ë¥¸ ì•„ì´í…œì¼ì‹œ ìƒˆë¡œìš´ ì•„ì´í…œ í• ë‹¹
             itemData = inventorySlot.itemData;
             stackSize = 0;
             AddToStack(inventorySlot.stackSize);
         }
     }
 
-    //µ¥ÀÌÅÍ ¼öÁ¤
+    //ë°ì´í„° ìˆ˜ì •
     public void UpdateSlot(ItemData itemData, int amount)
     {
         this.itemData = itemData;
@@ -81,18 +81,18 @@ public class InventorySlot : IComparable<InventorySlot>
     }
 
 
-    //¾ÆÀÌÅÛ ºĞÇÒ
+    //ì•„ì´í…œ ë¶„í• 
 
     public bool SplitStack(out InventorySlot slot)
     {
         if (stackSize <= 1)
         {
-            //¼ö·®ÀÌ 1°³ ÀÌÇÏÀÌ¸é ºĞÇÒ ÇÏÁö ¾ÊÀ½
+            //ìˆ˜ëŸ‰ì´ 1ê°œ ì´í•˜ì´ë©´ ë¶„í•  í•˜ì§€ ì•ŠìŒ
             slot = null;
             return false;        
         }
 
-        //¼ö·®ÀÌ 2°³ ÀÌ»óÀÏ½Ã 2°³·Î ³ª´©¾î out¿¡ ÇÒ´ç
+        //ìˆ˜ëŸ‰ì´ 2ê°œ ì´ìƒì¼ì‹œ 2ê°œë¡œ ë‚˜ëˆ„ì–´ outì— í• ë‹¹
         int halfStack = Mathf.RoundToInt(stackSize / 2);
         RemoveFromStack(halfStack);
 
@@ -102,7 +102,7 @@ public class InventorySlot : IComparable<InventorySlot>
     }
 
     
-    //Á¤·Ä ¿ì¼±¼øÀ§
+    //ì •ë ¬ ìš°ì„ ìˆœìœ„
     public int CompareTo(InventorySlot other)
     {
         if (itemData == null && other.itemData == null) return 0;

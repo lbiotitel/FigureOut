@@ -6,7 +6,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour, IManager
 {
 
-    //Äù½ºÆ® µ¥ÀÌÅÍµé ÀüºÎ Ä³½Ì
+    //í€˜ìŠ¤íŠ¸ ë°ì´í„°ë“¤ ì „ë¶€ ìºì‹±
     private Dictionary<string, QuestDataBase> questDataDict;
     private Dictionary<string, QuestBase> currentQuests;
 
@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //Äù½ºÆ® µ¥ÀÌÅÍµé ¹Ì¸® Ä³½Ì
+    //í€˜ìŠ¤íŠ¸ ë°ì´í„°ë“¤ ë¯¸ë¦¬ ìºì‹±
     private void LoadQuestData()
     {
         questDataDict = new Dictionary<string, QuestDataBase>();
@@ -40,12 +40,12 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //Äù½ºÆ® µî·Ï
+    //í€˜ìŠ¤íŠ¸ ë“±ë¡
     public void RegistQuest(string questID)
     {
         if (questID == null)
         {
-            Logger.LogError($"Àß¸øµÈ Äù½ºÆ® ID ÀÔ´Ï´Ù => {questID}");
+            Logger.LogError($"ì˜ëª»ëœ í€˜ìŠ¤íŠ¸ ID ì…ë‹ˆë‹¤ => {questID}");
             return;
         }
 
@@ -57,7 +57,7 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //Äù½ºÆ® ¼ö¶ô
+    //í€˜ìŠ¤íŠ¸ ìˆ˜ë½
     public void AcceptQuest(string questID)
     {
         if (currentQuests.TryGetValue(questID, out QuestBase quest))
@@ -73,10 +73,10 @@ public class QuestManager : MonoBehaviour, IManager
     {
         if (currentQuests.TryGetValue(questID, out QuestBase quest))
         {
-            //º¸»ó ÁÖ±â
+            //ë³´ìƒ ì£¼ê¸°
             GiveReward(quest);
 
-            //¿¬°è Äù½ºÆ® ´Ù µî·Ï
+            //ì—°ê³„ í€˜ìŠ¤íŠ¸ ë‹¤ ë“±ë¡
             if (quest.QuestData.NextQuestID != null)
             {
                 foreach (var id in quest.QuestData.NextQuestID)
@@ -92,7 +92,7 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //º¸»ó ¸¸µé¾î¼­ Áö±Ş
+    //ë³´ìƒ ë§Œë“¤ì–´ì„œ ì§€ê¸‰
     private static void GiveReward(QuestBase quest)
     {
         Managers.Game.AddDollar(quest.QuestData.DollarReward);
@@ -113,7 +113,7 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //Äù½ºÆ® »ı¼º
+    //í€˜ìŠ¤íŠ¸ ìƒì„±
     private QuestBase MakeQuest(string questID)
     {
         QuestBase res = null;
@@ -137,7 +137,7 @@ public class QuestManager : MonoBehaviour, IManager
     }
 
 
-    //UI¿¡ Äù½ºÆ® »óÅÂ º¯°æ ¾Ë¸²
+    //UIì— í€˜ìŠ¤íŠ¸ ìƒíƒœ ë³€ê²½ ì•Œë¦¼
     private void HandleQuestStateChanged(string questID)
     { 
         if (currentQuests.TryGetValue(questID, out QuestBase quest))

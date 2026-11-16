@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class RangedWeaponData : WeaponData
 {
-    [Header("¿ø°Å¸® ¹«±â ¼Ó¼º")]
+    [Header("ì›ê±°ë¦¬ ë¬´ê¸° ì†ì„±")]
     [SerializeField] private EAmmoType ammoType;
     [SerializeField] private float reloadTime;
     [SerializeField] private int magazineSize;
     [SerializeField, Range(0f, 0.6f)] private float recoil;
     [SerializeField] private float soundSize;
 
-    [Header("Åõ»çÃ¼")]
+    [Header("íˆ¬ì‚¬ì²´")]
     [SerializeField] private ProjectileData projectileData;
 
     private int currentMagazineSize = 0;

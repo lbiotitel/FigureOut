@@ -6,14 +6,14 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class UnitDropTableData : ScriptableObject
 {
-    [Header("º¸»ó ´Ş·¯")]
+    [Header("ë³´ìƒ ë‹¬ëŸ¬")]
     [SerializeField] private int dollarAmount;
 
 
-    [Header("È®Á¤ µå¶ø")]
+    [Header("í™•ì • ë“œë")]
     [SerializeField] private List<DropTableInfo> essentialDropTableInfos;
     
-    [Header("µå¶ø ½ÃÇà È½¼ö")]
+    [Header("ë“œë ì‹œí–‰ íšŸìˆ˜")]
     [SerializeField] private int dropAmount = 1;
     [SerializeField] private List<DropTableInfo> dropTableInfos;
 

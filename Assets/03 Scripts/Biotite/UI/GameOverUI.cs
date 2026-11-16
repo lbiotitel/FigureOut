@@ -34,7 +34,7 @@ public class GameOverUI : MonoBehaviour
 
     public void ShowUI(GameOverData gameOverData)
     {
-        whoKilledText.text = $"{gameOverData.killerName}©║╟т ав╬З╫ю╢о╢ы.";
+        whoKilledText.text = $"{gameOverData.killerName}Л≈░Й╡▄ Лё╫Л≈┬Л┼╣К▀┬К▀╓.";
         DrawLossItemImages(gameOverData.lossItemImages);
         gameObject.SetActive(true);
         animator.SetTrigger("Show");

@@ -36,7 +36,7 @@ public class PlayerEquipmentController : EquipmentController
         EquipmentData equipmentData = data.itemData as EquipmentData;
         if (equipmentData == null) return;
 
-        Logger.Log(equipmentData.ItemName + "Âø¿ë");
+        Logger.Log(equipmentData.ItemName + "ì°©ìš©");
         Equip(equipmentData);
     }
 
@@ -48,7 +48,7 @@ public class PlayerEquipmentController : EquipmentController
         EquipmentData equipmentData = data.itemData as EquipmentData;
         if (equipmentData == null) return;
 
-        Logger.Log($"{equipmentData.ItemName} Àåºñ ÇØÁ¦");
+        Logger.Log($"{equipmentData.ItemName} ìž¥ë¹„ í•´ì œ");
 
         if (equipmentData.EquipmentType == EEquipmentType.Weapon)
         {

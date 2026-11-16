@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Á¤Àû ÀÎº¥Åä¸® - ½½·ÔÀÌ ÀÌ¹Ì Á¸ÀçÇÏ´Â °æ¿ì »ç¿ë
+//ì •ì  ì¸ë²¤í† ë¦¬ - ìŠ¬ë¡¯ì´ ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ê²½ìš° ì‚¬ìš©
 public class StaticInventoryUI : InventoryUIBase
 {
     [SerializeField] private InventoryHolder inventoryHolder;
@@ -23,7 +23,7 @@ public class StaticInventoryUI : InventoryUIBase
         }
         else
         {
-            Logger.LogWarning($"ÀÎº¥Åä¸® ÇÒ´ç ¾ÈµÊ {this.gameObject}");
+            Logger.LogWarning($"ì¸ë²¤í† ë¦¬ í• ë‹¹ ì•ˆë¨ {this.gameObject}");
         }
 
         InitSlot(inventorySys);
@@ -33,7 +33,7 @@ public class StaticInventoryUI : InventoryUIBase
     {
         slotDict = new Dictionary<InventorySlotUI, InventorySlot>();
 
-        if (slots.Length != inventorySys.InventorySize) Logger.LogError("ÀÎº¥Åä¸® ½½·Ô°ú ÀÎº¥Åä¸® ½ÇÁ¦ »çÀÌÁî°¡ ´Ù¸¨´Ï´Ù.");
+        if (slots.Length != inventorySys.InventorySize) Logger.LogError("ì¸ë²¤í† ë¦¬ ìŠ¬ë¡¯ê³¼ ì¸ë²¤í† ë¦¬ ì‹¤ì œ ì‚¬ì´ì¦ˆê°€ ë‹¤ë¦…ë‹ˆë‹¤.");
 
         for (int i = 0; i < inventorySys.InventorySize; i++)
         {

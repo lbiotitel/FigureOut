@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening; // DOTween ³×ÀÓ½ºÆäÀÌ½º Ãß°¡ ÇÊ¼ö!
+using DG.Tweening; // DOTween ë„¤ì„ìŠ¤í˜ì´ìŠ¤ ì¶”ê°€ í•„ìˆ˜!
 
 public class UnitWorldHP : MonoBehaviour
 {

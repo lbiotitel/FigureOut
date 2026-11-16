@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 
 
-// Á¦³×¸¯ ÀÌº¥Æ® ¹ö½º ±¸Çö
+// ì œë„¤ë¦­ ì´ë²¤íŠ¸ ë²„ìŠ¤ êµ¬í˜„
 public class EventManager : IManager
 {
     public delegate void EventDelegate<T>(T e) where T : IEventData;

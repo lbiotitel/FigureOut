@@ -19,7 +19,7 @@ public class PlayerArmor : ArmorBase
         }
     }
 
-    //������ ���� ���
+    //플레이어 피격 시 방어구 내구도 감소
     private void HandleOnPlayerHit(float damage, bool isCri, bool isDot)
     {
         if (equipmentData.EquipmentType == EEquipmentType.Medal || isDot) return;

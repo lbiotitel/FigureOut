@@ -54,7 +54,7 @@ public class MouseObject : MonoBehaviour
         ItemData itemData = InventorySlot.ItemData;
         int amount = InventorySlot.StackSize;
 
-        //³ªÁß¿¡ ÇÃ·¹ÀÌ¾î ½Ì±ÛÅæÀ¸·Î ±³Ã¼
+        //ë‚˜ì¤‘ì— í”Œë ˆì´ì–´ ì‹±ê¸€í†¤ìœ¼ë¡œ êµì²´
         PlayerUnit player = GameObject.FindAnyObjectByType<PlayerUnit>();
         Transform targetTr = player.transform;
         Vector3 targetPos = targetTr.position + 
@@ -68,7 +68,7 @@ public class MouseObject : MonoBehaviour
 
         ClearSlot();
 
-        Managers.Event.NotifyEvent<SlotClickedEvent>(new SlotClickedEvent { itemData = null }); //¹ö¸± ¶§ ÇÏÀÌ¶óÀÌÆ® µÈ ºÎºĞÀ» ¾ø¾Ö±â À§ÇØ null·Î itemdata º¸³¿
+        Managers.Event.NotifyEvent<SlotClickedEvent>(new SlotClickedEvent { itemData = null }); //ë²„ë¦´ ë•Œ í•˜ì´ë¼ì´íŠ¸ ëœ ë¶€ë¶„ì„ ì—†ì• ê¸° ìœ„í•´ nullë¡œ itemdata ë³´ëƒ„
         Managers.Event.NotifyEvent<InventorySlotDataChanged>(new InventorySlotDataChanged { inventorySlots = null });
     }
 
@@ -84,7 +84,7 @@ public class MouseObject : MonoBehaviour
     }
 
 
-    //¸¶¿ì½º¿Í ´ê´Â UI°¡ ÀÖ´ÂÁö Ã¼Å©
+    //ë§ˆìš°ìŠ¤ì™€ ë‹¿ëŠ” UIê°€ ìˆëŠ”ì§€ ì²´í¬
     public bool IsPointerOverUIObject()
     {
         PointerEventData evenDataPos = new PointerEventData(EventSystem.current);

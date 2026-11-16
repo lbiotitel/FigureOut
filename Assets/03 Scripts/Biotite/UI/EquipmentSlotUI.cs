@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 
 
-//Àåºñ ½½·ÔÀ» Á¤ÀÇ ÇÕ´Ï´Ù.
+//ì¥ë¹„ ìŠ¬ë¡¯ì„ ì •ì˜ í•©ë‹ˆë‹¤.
 public class EquipmentSlotUI : InventorySlotUI
 {
     [SerializeField] private Outline hightLightOutLine;
@@ -11,7 +11,7 @@ public class EquipmentSlotUI : InventorySlotUI
     [field:SerializeField] public EEquipmentType EquipmentSlotTye { get; private set; }
 
 
-    //½½·ÔÀÇ UI¸¦ ¾÷µ¥ÀÌÆ® ÇÕ´Ï´Ù.
+    //ìŠ¬ë¡¯ì˜ UIë¥¼ ì—…ë°ì´íŠ¸ í•©ë‹ˆë‹¤.
     public override void UpdateUISlot(InventorySlot slot)
     {
         if (slot.ItemData != null)
@@ -29,7 +29,7 @@ public class EquipmentSlotUI : InventorySlotUI
     }
 
 
-    //½½·ÔÀÇ UI¸¦ ÃÊ±âÈ­ ÇÕ´Ï´Ù.
+    //ìŠ¬ë¡¯ì˜ UIë¥¼ ì´ˆê¸°í™” í•©ë‹ˆë‹¤.
     public override void ClearSlot()
     {
         inventorySlot?.ClearSlot();

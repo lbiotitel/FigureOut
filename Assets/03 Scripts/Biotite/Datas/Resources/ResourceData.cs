@@ -2,7 +2,7 @@ using UnityEngine;
 
 
 
-//Á¦·á µ¥ÀÌÅÍ¸¦ Á¤ÀÇÇÕ´Ï´Ù.
+//ì œë£Œ ë°ì´í„°ë¥¼ ì •ì˜í•©ë‹ˆë‹¤.
 [CreateAssetMenu()]
 public class ResourceData : ItemData
 {

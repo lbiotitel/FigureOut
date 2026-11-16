@@ -48,7 +48,7 @@ public class CharacterFaceUI : MonoBehaviour
 
     private void HandleFaceClicked(int index)
     {
-        Logger.Log($"{index} æÛ±º º±≈√");
+        Logger.Log($"{index} ÏñºÍµ¥ ÏÑ†ÌÉù");
         PlayerFaceInfo selectedFace = playerFaceData.FaceInfos[index];
         player.ChangeFace(selectedFace.faceMaterial);
     }

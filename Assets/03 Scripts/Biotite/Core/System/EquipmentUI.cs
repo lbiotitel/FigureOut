@@ -1,5 +1,5 @@
 
-//Àåºñ ÀåÂøÀ» ´ã´çÇÏ´Â UI ÀÔ´Ï´Ù
+//ì¥ë¹„ ì¥ì°©ì„ ë‹´ë‹¹í•˜ëŠ” UI ì…ë‹ˆë‹¤
 public class EquipmentUI : StaticInventoryUI
 {
 
@@ -15,7 +15,7 @@ public class EquipmentUI : StaticInventoryUI
     }
 
 
-    //Àåºñ¸¦ Å¬¸¯ÇØ¼­ ¸¶¿ì½º°¡ µé°íÀÖÀ» ¶§ Àåºñ ºÎºĞÀ» ÇÏÀÌ¶óÀÌÆ®
+    //ì¥ë¹„ë¥¼ í´ë¦­í•´ì„œ ë§ˆìš°ìŠ¤ê°€ ë“¤ê³ ìˆì„ ë•Œ ì¥ë¹„ ë¶€ë¶„ì„ í•˜ì´ë¼ì´íŠ¸
     private void HandleSlotClicked(MouseObjectUpdatedEvent data)
     {
         HideAllHightLight();
@@ -38,7 +38,7 @@ public class EquipmentUI : StaticInventoryUI
         }
     }
 
-    //¸ğµç ÇÏÀÌ¶óÀÌÆ® off
+    //ëª¨ë“  í•˜ì´ë¼ì´íŠ¸ off
     private void HideAllHightLight()
     {
         foreach (var slot in slotDict)
@@ -52,7 +52,7 @@ public class EquipmentUI : StaticInventoryUI
 
     public override void SlotClicked(InventorySlotUI clickedSlotUI)
     {
-        //¸¶¿ì½º¿¡ Àåºñ°¡ ¾ø°í ÇöÀç ½½·Ô¿¡´Â Àåºñ°¡ ÀÖÀ» ¶§
+        //ë§ˆìš°ìŠ¤ì— ì¥ë¹„ê°€ ì—†ê³  í˜„ì¬ ìŠ¬ë¡¯ì—ëŠ” ì¥ë¹„ê°€ ìˆì„ ë•Œ
         if (!clickedSlotUI.InventorySlot.IsEmpty() && mouseObject.InventorySlot.ItemData == null)
         {
 
@@ -63,10 +63,10 @@ public class EquipmentUI : StaticInventoryUI
         }
 
 
-        //¸¸¾à ¿òÁ÷ÀÏ ½Ã¿¡´Â ÀåÂøÇÏÁö ¸øÇÏ°Ô ¸·ÀÚ
+        //ë§Œì•½ ì›€ì§ì¼ ì‹œì—ëŠ” ì¥ì°©í•˜ì§€ ëª»í•˜ê²Œ ë§‰ì
        
 
-        //¸¶¿ì½º¿¡ Àåºñ°¡ ÀÖÀ» ¶§
+        //ë§ˆìš°ìŠ¤ì— ì¥ë¹„ê°€ ìˆì„ ë•Œ
         if (!mouseObject.InventorySlot.IsEmpty())
         {
             EquipmentSlotUI equipmentSlotUI = clickedSlotUI as EquipmentSlotUI;
@@ -78,10 +78,10 @@ public class EquipmentUI : StaticInventoryUI
                 HideAllHightLight();
                 return;
             }
-            //ÀåÂøÇÒ ¼ö ÀÖ´Â ½½·ÔÀÏ ¶§
+            //ì¥ì°©í•  ìˆ˜ ìˆëŠ” ìŠ¬ë¡¯ì¼ ë•Œ
             if (equipmentSlotUI.EquipmentSlotTye == equipmentData.EquipmentType)
             {
-                //½½·ÔÀÌ ºñ¾îÀÖÀ¸¸é ±×³É ÀåÂø
+                //ìŠ¬ë¡¯ì´ ë¹„ì–´ìˆìœ¼ë©´ ê·¸ëƒ¥ ì¥ì°©
                 if (equipmentSlotUI.InventorySlot.IsEmpty())
                 {
                     clickedSlotUI.InventorySlot.AssignItem(mouseObject.InventorySlot);
@@ -90,7 +90,7 @@ public class EquipmentUI : StaticInventoryUI
                 }
                 else
                 {
-                    //½½·ÔÀÌ ºñÁö ¾Ê¾ÒÀ» ¶§ ½º¿Ò
+                    //ìŠ¬ë¡¯ì´ ë¹„ì§€ ì•Šì•˜ì„ ë•Œ ìŠ¤ì™‘
                     Managers.Event.NotifyEvent<UnEquippedEquipmentEvent>(new UnEquippedEquipmentEvent { itemData = mouseObject.InventorySlot.ItemData });
                     SwapSlots(clickedSlotUI);
                 }

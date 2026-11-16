@@ -68,7 +68,7 @@ public class CharacterSelectUI : MonoBehaviour
         CharaterSelectData.selectedColor = player.GetColor();
         CharaterSelectData.selectedFaceMat = player.GetFaceMaterial();
 
-        Logger.Log("∞‘¿” Ω√¿€");
+        Logger.Log("Í≤åÏûÑ ÏãúÏûë");
         helecopterAnim.MoveWayPoint();
         canvasGroup.interactable = false;
         canvasGroup.DOFade(0f, 1f);
@@ -80,7 +80,7 @@ public class CharacterSelectUI : MonoBehaviour
     {
         currentClassType = classType;
         classNameText.text = Utils.ClassTypeToKor.GetKor(classType);
-        Logger.Log($"{classType} º±≈√");
+        Logger.Log($"{classType} ÏÑ†ÌÉù");
     }
 
 }

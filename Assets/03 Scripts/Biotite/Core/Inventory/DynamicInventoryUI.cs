@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-//µ¿Àû ÀÎº¥Åä¸® - ½½·ÔÀÌ ÇÁ¸®ÆÕÀ¸·Î »ı¼ºµÇ¾î¾ß ÇÏ´Â °æ¿ì »ç¿ë
+//ë™ì  ì¸ë²¤í† ë¦¬ - ìŠ¬ë¡¯ì´ í”„ë¦¬íŒ¹ìœ¼ë¡œ ìƒì„±ë˜ì–´ì•¼ í•˜ëŠ” ê²½ìš° ì‚¬ìš©
 public class DynamicInventoryUI : InventoryUIBase
 {
 
@@ -26,7 +26,7 @@ public class DynamicInventoryUI : InventoryUIBase
         }
         else
         {
-            Logger.LogWarning($"ÀÎº¥Åä¸® ÇÒ´ç ¾ÈµÊ {this.gameObject}");
+            Logger.LogWarning($"ì¸ë²¤í† ë¦¬ í• ë‹¹ ì•ˆë¨ {this.gameObject}");
         }
 
         InitSlot(inventorySys);

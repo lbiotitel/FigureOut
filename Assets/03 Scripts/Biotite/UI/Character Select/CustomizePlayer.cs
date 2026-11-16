@@ -5,7 +5,7 @@ public class CustomizePlayer : MonoBehaviour
     [SerializeField] private MeshRenderer faceRenderer;
     [SerializeField] private MeshRenderer bodyRenderer;
 
-    //¸ÓÆ¼¸®¾ó ÀÎ½ºÅÏ½º¸¦ µû·Î ¸¸µéÁö ¾ÊÀ¸¸é¼­µµ ÇØ´ç °´Ã¼ÀÇ Æ¯Á¤ ¼Ó¼º(»ö»ó µî)¸¸ ´Ù¸£°Ô ±×¸± ¼ö ÀÖ°Ô ÇØÁİ´Ï´Ù.
+    //ë¨¸í‹°ë¦¬ì–¼ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë”°ë¡œ ë§Œë“¤ì§€ ì•Šìœ¼ë©´ì„œë„ í•´ë‹¹ ê°ì²´ì˜ íŠ¹ì • ì†ì„±(ìƒ‰ìƒ ë“±)ë§Œ ë‹¤ë¥´ê²Œ ê·¸ë¦´ ìˆ˜ ìˆê²Œ í•´ì¤ë‹ˆë‹¤.
     private MaterialPropertyBlock propBlock; 
 
     void Awake()

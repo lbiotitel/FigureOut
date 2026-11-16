@@ -49,7 +49,7 @@ public class ResourceLoader
     }
 
 
-    //ÇØ´ç Å°¿¡ ÇØ´çÇÏ°í Å¸ÀÔÀº TÀÎ µ¥ÀÌÅÍ¸¦ ÀüºÎ ºñµ¿±â ·Îµå ÇÕ´Ï´Ù.
+    //í•´ë‹¹ í‚¤ì— í•´ë‹¹í•˜ê³  íƒ€ì…ì€ Tì¸ ë°ì´í„°ë¥¼ ì „ë¶€ ë¹„ë™ê¸° ë¡œë“œ í•©ë‹ˆë‹¤.
     public void LoadAllAsync<T>(string label, Action<string, int, int,object> callback) where T : UnityEngine.Object
     {
         var opHandle = Addressables.LoadResourceLocationsAsync(label, typeof(T));
@@ -81,7 +81,7 @@ public class ResourceLoader
     }
 
 
-    //ÇØ´ç Å°ÀÇ ¸®¼Ò½º°¡ ÀÖ´ÂÁö È®ÀÎÇÕ´Ï´Ù.
+    //í•´ë‹¹ í‚¤ì˜ ë¦¬ì†ŒìŠ¤ê°€ ìˆëŠ”ì§€ í™•ì¸í•©ë‹ˆë‹¤.
     public async UniTask<bool> IsExists<T>(string key)
     {
         var opHandle = Addressables.LoadResourceLocationsAsync(key, typeof(T));

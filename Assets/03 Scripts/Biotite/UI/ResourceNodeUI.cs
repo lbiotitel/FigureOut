@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 
 
-//ÁøÈ­¿¡ ÇÊ¿äÇÑ Àç·á¿¡ ´ëÇÑ ³ëµå ui ÀÔ´Ï´Ù.
+//ì§„í™”ì— í•„ìš”í•œ ì¬ë£Œì— ëŒ€í•œ ë…¸ë“œ ui ì…ë‹ˆë‹¤.
 public class ResourceNodeUI : MonoBehaviour
 {
     [SerializeField] private Image materialImage;

@@ -15,7 +15,7 @@ public class ItemStorage : InventoryHolder, IInteractable
                 {
                     position = transform.position,
                     interactableObject = this,
-                    interactText = "Ã¢°í ¿­±â"
+                    interactText = "ì°½ê³  ì—´ê¸°"
                 });
         });
     }
@@ -31,7 +31,7 @@ public class ItemStorage : InventoryHolder, IInteractable
 
     public void Interact(PlayerUnit unit)
     {
-        Logger.Log("Ã¢°í »óÈ£ ÀÛ¿ë");
+        Logger.Log("ì°½ê³  ìƒí˜¸ ì‘ìš©");
         inventoryUI.ShowUI();
         Managers.Event.NotifyEvent<InteractEvent>(new InteractEvent { interactableObject = this });
     }

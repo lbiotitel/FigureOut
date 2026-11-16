@@ -41,7 +41,7 @@ public class EnemyRangedWeapon : WeaponBase
 
 
 
-    //¿ø°Å¸® ¹«±â ºÒ¸´ »ı¼º
+    //ì›ê±°ë¦¬ ë¬´ê¸° ë¶ˆë¦¿ ìƒì„±
     protected override void OnUse(Transform targetTransform)
     {
         if (rangedWeaponData.CurrentMagazineSize <= 0 || isReload) return;

@@ -32,7 +32,7 @@ public struct EquippedEquipmentEvent : IEventData
 }
 
 
-//ÀÎº¥Åä¸® ¾÷µ¥ÀÌÆ® ÀÌº¥Æ®, ¾ÆÀÌÅÛÀÌ Ãß°¡µÇ°Å³ª Á¦°ÅµÉ ¶§ ¹ß»ı
+//ì¸ë²¤í† ë¦¬ ì—…ë°ì´íŠ¸ ì´ë²¤íŠ¸, ì•„ì´í…œì´ ì¶”ê°€ë˜ê±°ë‚˜ ì œê±°ë  ë•Œ ë°œìƒ
 public struct InventoryDataChangedEvent : IEventData
 {
     public InventorySlot inventorySlot;

@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour, IManager
     }
 
 
-    //°ÔÀÓÀ» °è¼ÓÇÕ´Ï´Ù.
+    //ê²Œì„ì„ ê³„ì†í•©ë‹ˆë‹¤.
     public void ResetGame()
     {
         Managers.Object.ResetAllEnemies();

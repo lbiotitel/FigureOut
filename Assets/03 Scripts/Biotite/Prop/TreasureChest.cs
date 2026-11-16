@@ -24,7 +24,7 @@ public class TreasureChest : MonoBehaviour,IInteractable
                 {
                     position = transform.position,
                     interactableObject = this,
-                    interactText = "»óÀÚ ¿­±â"
+                    interactText = "ìƒì ì—´ê¸°"
                 });
         });
     }

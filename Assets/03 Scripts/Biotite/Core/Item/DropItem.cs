@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 
-//ÇÊµå¿¡ Ãâ·ÂµÇ´Â ¾ÆÀÌÅÛ µå·Ó ¿ÀºêÁ§Æ® ÀÔ´Ï´Ù.
+//í•„ë“œì— ì¶œë ¥ë˜ëŠ” ì•„ì´í…œ ë“œë¡­ ì˜¤ë¸Œì íŠ¸ ì…ë‹ˆë‹¤.
 public class DropItem : MonoBehaviour
 {
     [SerializeField] private ParticleSystem lineParticle;
@@ -29,14 +29,14 @@ public class DropItem : MonoBehaviour
     private Vector3 startPos;
 
 
-    //»õ·Î¿î ¾ÆÀÌÅÛÀ» ÃÊ±âÈ­
+    //ìƒˆë¡œìš´ ì•„ì´í…œì„ ì´ˆê¸°í™”
     public void Init(string itemKey, int amount = 1)
     {
         ItemData = Managers.Data.GetData<ItemData>(itemKey);
 
         if (ItemData == null)
         {
-            Logger.LogError($"{itemKey}¿¡ ´ëÇÑ µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.");
+            Logger.LogError($"{itemKey}ì— ëŒ€í•œ ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.");
             Destroy(gameObject);
             return;
         }
@@ -45,7 +45,7 @@ public class DropItem : MonoBehaviour
     }
 
 
-    //ÀÎ°ÔÀÓ¿¡ ÀÖ´Â ¾ÆÀÌÅÛ µ¥ÀÌÅÍ·Î ÃÊ±âÈ­
+    //ì¸ê²Œì„ì— ìˆëŠ” ì•„ì´í…œ ë°ì´í„°ë¡œ ì´ˆê¸°í™”
     public void Init(ItemData itemData, int amount = 1)
     {
         if (itemData != null)
@@ -80,7 +80,7 @@ public class DropItem : MonoBehaviour
         this.target = target.GetComponent<PlayerUnit>();
     }
 
-    //µå·ÓÁØºñ°¡ µÇ¾ú´Ù¸é ÇÃ·¹ÀÌ¾î¸¦ µû¶ó°£´Ù.
+    //ë“œë¡­ì¤€ë¹„ê°€ ë˜ì—ˆë‹¤ë©´ í”Œë ˆì´ì–´ë¥¼ ë”°ë¼ê°„ë‹¤.
     private void FollowTarget()
     {
         if (!IsPickedUp || !CanPickedUp) return;
@@ -118,12 +118,12 @@ public class DropItem : MonoBehaviour
         itemModelTr.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
     }
 
-    //¾ÆÀÌÅÛ ¸ğµ¨ »ı¼º
+    //ì•„ì´í…œ ëª¨ë¸ ìƒì„±
     private void CreateModel(GameObject model)
     {
         if (model == null)
         {
-            Logger.LogError($"{ItemData.ItemName} ÀÇ ¸ğµ¨ÀÌ µî·ÏµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+            Logger.LogError($"{ItemData.ItemName} ì˜ ëª¨ë¸ì´ ë“±ë¡ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
             return;
         }
         GameObject itemModel = Instantiate(model, itemModelTr);
@@ -132,7 +132,7 @@ public class DropItem : MonoBehaviour
     }
 
 
-    //µî±Şº° ¾Æ¿ì¶ó È¿°ú
+    //ë“±ê¸‰ë³„ ì•„ìš°ë¼ íš¨ê³¼
     private void ShowAura(ERarity rarity)
     {
         var lineMain = lineParticle.main;

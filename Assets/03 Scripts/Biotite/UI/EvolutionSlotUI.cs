@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 
-//Àåºñ ÁøÈ­ UIÀÇ ½½·ÔÀ» Á¤ÀÇÇÕ´Ï´Ù
+//ì¥ë¹„ ì§„í™” UIì˜ ìŠ¬ë¡¯ì„ ì •ì˜í•©ë‹ˆë‹¤
 public class EvolutionSlotUI : InventorySlotUI
 {
 

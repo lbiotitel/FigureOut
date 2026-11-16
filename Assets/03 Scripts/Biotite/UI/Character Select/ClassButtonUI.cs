@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-//È­¸é ¼±ÅÃÃ¢ÀÇ Å¬·¡½º ¹öÆ°
+//í™”ë©´ ì„ íƒì°½ì˜ í´ë˜ìŠ¤ ë²„íŠ¼
 public class ClassButtonUI : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField] private EClassType classType;
@@ -26,7 +26,7 @@ public class ClassButtonUI : MonoBehaviour, IPointerEnterHandler
     }
 
 
-    //¸¶¿ì½º°¡ µé¾î¿ÔÀ» ¶§ ÇÏÀÌ¶óÀÌÆ®
+    //ë§ˆìš°ìŠ¤ê°€ ë“¤ì–´ì™”ì„ ë•Œ í•˜ì´ë¼ì´íŠ¸
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (isAnim) return;

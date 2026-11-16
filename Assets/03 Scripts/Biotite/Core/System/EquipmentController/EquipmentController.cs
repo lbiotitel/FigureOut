@@ -30,7 +30,7 @@ public abstract class EquipmentController : MonoBehaviour
 
     public abstract void Equip(EquipmentData equipmentData);
 
-    //¹«±â »ç¿ë
+    //ë¬´ê¸° ì‚¬ìš©
     public void UseWeapon(Transform targetTransform) => currentWeapon?.Use(targetTransform);
 
 }

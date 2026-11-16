@@ -15,7 +15,7 @@ public class ArmorBase : MonoBehaviour, IEquipment
 
 
 
-    //ÀåÂø ÇÏ°í ½ºÅÈ Ãß°¡
+    //ì¥ì°© í•˜ê³  ìŠ¤íƒ¯ ì¶”ê°€
     public virtual void Equip()
     {
         var statList = equipmentData.EquipmentStats;
@@ -27,7 +27,7 @@ public class ArmorBase : MonoBehaviour, IEquipment
     }
 
 
-    //ÇØÁ¦ ÇÏ°í ½ºÅÈ °¨¼Ò
+    //í•´ì œ í•˜ê³  ìŠ¤íƒ¯ ê°ì†Œ
     public virtual void UnEquip()
     {
         ownUnit.unitStat.RemoveAllModifiresFromSource(this);

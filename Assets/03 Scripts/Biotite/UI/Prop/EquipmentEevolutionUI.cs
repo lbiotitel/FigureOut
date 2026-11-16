@@ -6,23 +6,23 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-//¹«±â ÁøÈ­¿¡ ´ëÇÑ UI ÀÔ´Ï´Ù.
+//ë¬´ê¸° ì§„í™”ì— ëŒ€í•œ UI ì…ë‹ˆë‹¤.
 public class EquipmentEevolutionUI : StaticInventoryUI
 {
-    [Header("EquipmentEvolutionUI ¼Ó¼º")]
-    [SerializeField] private EvolutionSlotUI equipmentSlotUI; // ÁøÈ­ Àü Àåºñ ½½·Ô
-    [SerializeField] private EvolutionSlotUI evolutionSlotUI; //ÁøÈ­ ÈÄ Àåºñ ½½·Ô
+    [Header("EquipmentEvolutionUI ì†ì„±")]
+    [SerializeField] private EvolutionSlotUI equipmentSlotUI; // ì§„í™” ì „ ì¥ë¹„ ìŠ¬ë¡¯
+    [SerializeField] private EvolutionSlotUI evolutionSlotUI; //ì§„í™” í›„ ì¥ë¹„ ìŠ¬ë¡¯
     [SerializeField] private Button evolutionButton;
     [SerializeField] private EvolutionAnimUI evolutionAnimUI;
     private bool isEvolution = false;
 
-    //Àç·áÃ¢
+    //ì¬ë£Œì°½
     [SerializeField] private int poolingCount = 10;
-    [SerializeField] private Transform resourceTransform; //ÁøÈ­ Àç·á¸¦ º¸¿©ÁÙ Æ®·£½ºÆû
-    [SerializeField] private ResourceNodeUI resourceNodeUIPrefab; //ÁøÈ­ Àç·á ³ëµå ÇÁ¸®ÆÕ
+    [SerializeField] private Transform resourceTransform; //ì§„í™” ì¬ë£Œë¥¼ ë³´ì—¬ì¤„ íŠ¸ëœìŠ¤í¼
+    [SerializeField] private ResourceNodeUI resourceNodeUIPrefab; //ì§„í™” ì¬ë£Œ ë…¸ë“œ í”„ë¦¬íŒ¹
     private List<ResourceNodeUI> resourceNodeUIs = new List<ResourceNodeUI>();
 
-    //´Ş·¯
+    //ë‹¬ëŸ¬
     [SerializeField] private TMP_Text dollarText;
 
     private EvolutionRecipeData evolutionRecipeData;
@@ -48,7 +48,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //½½·Ô Å¬¸¯ ½Ã
+    //ìŠ¬ë¡¯ í´ë¦­ ì‹œ
     public override void SlotClicked(InventorySlotUI clickedSlotUI)
     {
         HideAllResourceNodeUIs();
@@ -74,7 +74,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //ÁøÈ­ ·¹½ÃÇÇ¸¦ °¡Áö°í¿Í¼­ Àç·á ½½·Ô¿¡ º¸¿©Áİ´Ï´Ù.
+    //ì§„í™” ë ˆì‹œí”¼ë¥¼ ê°€ì§€ê³ ì™€ì„œ ì¬ë£Œ ìŠ¬ë¡¯ì— ë³´ì—¬ì¤ë‹ˆë‹¤.
     private void ShowRevolutionEquipment(EquipmentData equipmentData)
     {
         string evolutionRecipeID = equipmentData.RevolutionRecipeID;
@@ -87,7 +87,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
         EquipmentData evolutionEquipment = Managers.Data.GetData<EquipmentData>(evolutionRecipeData.RevolutionEquipmentID);
         if (evolutionEquipment == null)
         {
-            Logger.Log("ÁøÈ­ ÀåºñÀÇ id °¡ Àß¸øµÇ¾ú½À´Ï´Ù");
+            Logger.Log("ì§„í™” ì¥ë¹„ì˜ id ê°€ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤");
             return;
         }
 
@@ -102,7 +102,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     private void ShowEvolutionEquipmentResourceUI(EvolutionRecipeData evolutionRecipeData)
     {
         List<EevolutionRecipeRequiredData> requiredDatas = evolutionRecipeData.RecipeRequiredDatas;
-        //Àç·á ½½·Ô ÃÊ±âÈ­
+        //ì¬ë£Œ ìŠ¬ë¡¯ ì´ˆê¸°í™”
 
         PlayerUnit player = GameObject.FindAnyObjectByType<PlayerUnit>();
         InventorySystem InventorySys = player.InventoryHolder.InventorySys;
@@ -113,7 +113,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
             int requiredCount = requiredDatas[i].amount;
             if (itemData == null)
             {
-                Logger.Log("ÁøÈ­ Àç·áÀÇ id °¡ Àß¸øµÇ¾ú½À´Ï´Ù");
+                Logger.Log("ì§„í™” ì¬ë£Œì˜ id ê°€ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤");
                 continue;
             }
 
@@ -125,7 +125,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //Àåºñ ÁøÈ­
+    //ì¥ë¹„ ì§„í™”
     private void OnEvolutionButtonClicked()
     {
         if (CanEvolution() && !isEvolution)
@@ -161,7 +161,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //ÁøÈ­¿¡ ÇÊ¿äÇÑ ¸ğµç Àç·á°¡ ´Ù ÀÖ´ÂÁö È®ÀÎÇÕ´Ï´Ù.
+    //ì§„í™”ì— í•„ìš”í•œ ëª¨ë“  ì¬ë£Œê°€ ë‹¤ ìˆëŠ”ì§€ í™•ì¸í•©ë‹ˆë‹¤.
     private bool CanEvolution()
     {
         if (evolutionSlotUI.InventorySlot.IsEmpty()) return false;
@@ -187,7 +187,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //¸ğµç Àç·á UI¸¦ °¨Ãä´Ï´Ù.
+    //ëª¨ë“  ì¬ë£Œ UIë¥¼ ê°ì¶¥ë‹ˆë‹¤.
     private void HideAllResourceNodeUIs()
     {
         foreach (var materialNodeUI in resourceNodeUIs)
@@ -204,7 +204,7 @@ public class EquipmentEevolutionUI : StaticInventoryUI
     }
 
 
-    //ÀÎº¥Åä¸® ½½·ÔÀÌ º¯°æµÇ¾úÀ» ¶§ ÁøÈ­ Àåºñ¿Í Àç·á UI¸¦ ÃÊ±âÈ­ÇÕ´Ï´Ù.
+    //ì¸ë²¤í† ë¦¬ ìŠ¬ë¡¯ì´ ë³€ê²½ë˜ì—ˆì„ ë•Œ ì§„í™” ì¥ë¹„ì™€ ì¬ë£Œ UIë¥¼ ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
     private void HandleInventorySlotChnagedEvent(InventoryDataChangedEvent inventoryDataChanged)
     {
         EquipmentData equipmentData = equipmentSlotUI.InventorySlot.ItemData as EquipmentData;

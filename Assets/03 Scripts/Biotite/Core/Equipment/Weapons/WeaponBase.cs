@@ -65,7 +65,7 @@ public abstract class WeaponBase : MonoBehaviour,IWeapon, IEquipment
         }
         catch (OperationCanceledException)
         {
-            Logger.Log("À¯´ÏÆ¼ ÅÂ½ºÅ©°¡ ¾ÈÀüÇÏ°Ô ÇØÁ¦‰ç½À´Ï´Ù.");
+            Logger.Log("ìœ ë‹ˆí‹° íƒœìŠ¤í¬ê°€ ì•ˆì „í•˜ê²Œ í•´ì œë¬ìŠµë‹ˆë‹¤.");
         }
     }
 

@@ -93,7 +93,7 @@ public class ConsoleSystem : MonoBehaviour
 
         ADD_DOLLAR_COMMAND = new ConsoleCommand<int>("dollar", "Adds dollar.", "dollar [amount]", (amount) =>
         {
-            Debug.Log("°ñµå Ãß°¡");
+            Debug.Log("ê³¨ë“œ ì¶”ê°€");
             Managers.Game.AddDollar(amount);
         });
 

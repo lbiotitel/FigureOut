@@ -28,7 +28,7 @@ public class PickUpController : MonoBehaviour
                     if (!dropItem.CanPickedUp ||  dropItem.IsPickedUp) return;
                     dropItem.OnPickUpAnimFinish += PickUp;
                     dropItem.PickUp(transform);
-                    Logger.Log($"Áö±İ Ãæµ¹ µÈ ¾ÆÀÌÅÛ {dropItem.name}");
+                    Logger.Log($"ì§€ê¸ˆ ì¶©ëŒ ëœ ì•„ì´í…œ {dropItem.name}");
                 }
             }
         }

@@ -46,7 +46,7 @@ public class PlayerRangedWeapon : WeaponBase
 
 
 
-    //¿ø°Å¸® ¹«±â ºÒ¸´ »ı¼º
+    //ì›ê±°ë¦¬ ë¬´ê¸° ë¶ˆë¦¿ ìƒì„±
     protected override void OnUse(Transform targetTransform)
     {
         if (rangedWeaponData.CurrnetDurability <= 0) return;
@@ -73,7 +73,7 @@ public class PlayerRangedWeapon : WeaponBase
     }
 
 
-    //¸®·Îµå ³ªÁß¿¡ ¸®·Îµå Å¸ÀÓ¿¡ °¡¼Ó °öÇØ¼­ ÁÙ¿©¾ßÇÔ ³ªÁß¿¡ ¸®ÆÑÅä¸µ ÇØ¼­ Á» ±ò²ûÇÏ°Ô ´Ùµë¾î¾ßÇÔ
+    //ë¦¬ë¡œë“œ ë‚˜ì¤‘ì— ë¦¬ë¡œë“œ íƒ€ì„ì— ê°€ì† ê³±í•´ì„œ ì¤„ì—¬ì•¼í•¨ ë‚˜ì¤‘ì— ë¦¬íŒ©í† ë§ í•´ì„œ ì¢€ ê¹”ë”í•˜ê²Œ ë‹¤ë“¬ì–´ì•¼í•¨
     protected virtual void Reload()
     {
         if (isReload || rangedWeaponData.CurrnetDurability <= 0) return;
@@ -86,7 +86,7 @@ public class PlayerRangedWeapon : WeaponBase
         InventorySystem inventorySystem = playerUnit.InventoryHolder.InventorySys;
         if (!inventorySystem.ContainsItem(ammoType)) return;
 
-        Logger.Log("¸®·Îµå Áß");
+        Logger.Log("ë¦¬ë¡œë“œ ì¤‘");
         isReload = true;
 
         ReloadTime(reloadTime, () =>
@@ -128,12 +128,12 @@ public class PlayerRangedWeapon : WeaponBase
         isReload = false;
         Managers.Audio.PlaySfx(KeyDefines.SoundKey.ReloadSfx);
 
-        Logger.Log("¸®·Îµå ¿Ï·á");
+        Logger.Log("ë¦¬ë¡œë“œ ì™„ë£Œ");
     }
 
 
 
-    //³ªÁß¿¡ ÀçÀåÀü ÇÒ ¶§¸¸ Ã¼Å©ÇÏµµ·Ï ¹Ù²ã¾ßÇÒµí ÃÑ±â¸¦ ¹ö¸®¸é ÃÑ¾Ë °³¼ö¸¦ °¡Áö°í ÀÖ¾î¾ßÇÔ
+    //ë‚˜ì¤‘ì— ì¬ì¥ì „ í•  ë•Œë§Œ ì²´í¬í•˜ë„ë¡ ë°”ê¿”ì•¼í• ë“¯ ì´ê¸°ë¥¼ ë²„ë¦¬ë©´ ì´ì•Œ ê°œìˆ˜ë¥¼ ê°€ì§€ê³  ìˆì–´ì•¼í•¨
     protected virtual bool CheckAmmo(out List<InventorySlot> invSlots)
     {
         invSlots = null;
@@ -154,7 +154,7 @@ public class PlayerRangedWeapon : WeaponBase
 
     private void CreateBullet(Transform targetTransform)
     {
-        Logger.Log($"{rangedWeaponData.ItemName} ¿¡¼­ ¹ß»çµÊ");
+        Logger.Log($"{rangedWeaponData.ItemName} ì—ì„œ ë°œì‚¬ë¨");
         if (rangedWeaponData.ProjectileData.ProjectilePrefab == null) return;
         if (ownUnit == null) return;
 

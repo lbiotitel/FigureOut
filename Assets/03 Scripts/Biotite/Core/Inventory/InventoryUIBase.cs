@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-//ÀÎº¥Åä¸® ±â´ÉÀ» »ç¿ëÇÒ Å¬·¡½º´Â ¸ğµÎ »ó¼Ó ¹Ş¾Æ¾ß ÇÕ´Ï´Ù.
+//ì¸ë²¤í† ë¦¬ ê¸°ëŠ¥ì„ ì‚¬ìš©í•  í´ë˜ìŠ¤ëŠ” ëª¨ë‘ ìƒì† ë°›ì•„ì•¼ í•©ë‹ˆë‹¤.
 public abstract class InventoryUIBase : MonoBehaviour
 {
     [SerializeField] private GameObject uiContent;
@@ -27,7 +27,7 @@ public abstract class InventoryUIBase : MonoBehaviour
 
     public abstract void InitSlot(InventorySystem inventorySys);
 
-    //Æ¯Á¤ ½½·Ô ¼öÁ¤ ½Ã ±× ½½·Ô¸¸ ¾÷µ¥ÀÌÆ®
+    //íŠ¹ì • ìŠ¬ë¡¯ ìˆ˜ì • ì‹œ ê·¸ ìŠ¬ë¡¯ë§Œ ì—…ë°ì´íŠ¸
     protected virtual void UpdateSlot(InventorySlot updatedSlot)
     {
         foreach (var slot in slotDict)
@@ -41,12 +41,12 @@ public abstract class InventoryUIBase : MonoBehaviour
     }
 
 
-    //ÀÎº¥Åä¸® Á¤·Ä
+    //ì¸ë²¤í† ë¦¬ ì •ë ¬
     public void SortInventory()
         => inventorySys.SortInvetorySlot();
 
 
-    //Á´·Ä½Ã ½½·Ô ÀüÃ¼ ´Ù½Ã ¾÷µ¥ÀÌÆ®
+    //ì¡ë ¬ì‹œ ìŠ¬ë¡¯ ì „ì²´ ë‹¤ì‹œ ì—…ë°ì´íŠ¸
     protected virtual void UpdateSortedSlot(List<InventorySlot> sortedSlots)
     {
         var uiKeys = new List<InventorySlotUI>(slotDict.Keys);
@@ -63,16 +63,16 @@ public abstract class InventoryUIBase : MonoBehaviour
     }
 
 
-    //½½·Ô Å¬¸¯½Ã
+    //ìŠ¬ë¡¯ í´ë¦­ì‹œ
     public virtual void SlotClicked(InventorySlotUI clickedSlotUI)
     {
-        //¸¶¿ì½º¿¡´Â µ¥ÀÌÅÍ°¡°¡ ¾ø°í ½½·Ô¿¡´Â µ¥ÀÌÅÍ°¡ ÀÖÀ» ½Ã
+        //ë§ˆìš°ìŠ¤ì—ëŠ” ë°ì´í„°ê°€ê°€ ì—†ê³  ìŠ¬ë¡¯ì—ëŠ” ë°ì´í„°ê°€ ìˆì„ ì‹œ
         if (clickedSlotUI.InventorySlot.ItemData != null && mouseObject.InventorySlot.ItemData == null)
         {
-            //ºĞÇÒÅ° ´©¸§
+            //ë¶„í• í‚¤ ëˆ„ë¦„
             if (Managers.Input.InventorySplitButton && clickedSlotUI.InventorySlot.SplitStack(out InventorySlot slot))
             {
-                //¾ÆÀÌÅÛ ºĞÇÒ
+                //ì•„ì´í…œ ë¶„í• 
                 mouseObject.UpdateSlot(slot);
                 clickedSlotUI.UpdateUISlot();
                 return;
@@ -88,10 +88,10 @@ public abstract class InventoryUIBase : MonoBehaviour
 
         SetEmptySlot(clickedSlotUI);
 
-        //¸¶¿ì½º ½½·Ô µÑ´Ù µ¥ÀÌÅÍ°¡ ÀÖÀ» ½Ã
+        //ë§ˆìš°ìŠ¤ ìŠ¬ë¡¯ ë‘˜ë‹¤ ë°ì´í„°ê°€ ìˆì„ ì‹œ
         if (clickedSlotUI.InventorySlot.ItemData != null && mouseObject.InventorySlot.ItemData != null)
         {
-            //µÎ°³ÀÇ ¾ÆÀÌÅÛ µ¥ÀÌÅÍ ID°¡ ´Ù¸¦½Ã
+            //ë‘ê°œì˜ ì•„ì´í…œ ë°ì´í„° IDê°€ ë‹¤ë¥¼ì‹œ
             if (clickedSlotUI.InventorySlot.ItemData.ItemID != mouseObject.InventorySlot.ItemData.ItemID)
             {
                 SwapSlots(clickedSlotUI);
@@ -99,9 +99,9 @@ public abstract class InventoryUIBase : MonoBehaviour
             }
             else
             {
-                //2°³ÀÇ ¾ÆÀÌÅÛ µ¥ÀÌÅÍ°¡ °°À» ½Ã
+                //2ê°œì˜ ì•„ì´í…œ ë°ì´í„°ê°€ ê°™ì„ ì‹œ
 
-                //ÇöÀç¼ö + ´õÇÑ ¾ÆÀÌÅÛ ¼ö °¡ ÃÖ´ë ½ºÅÃÀ» ¸ø³ÑÀ»½Ã
+                //í˜„ì¬ìˆ˜ + ë”í•œ ì•„ì´í…œ ìˆ˜ ê°€ ìµœëŒ€ ìŠ¤íƒì„ ëª»ë„˜ì„ì‹œ
                 if (clickedSlotUI.InventorySlot.IsEnoughSlotStack(mouseObject.InventorySlot.StackSize))
                 {
                     clickedSlotUI.InventorySlot.AssignItem(mouseObject.InventorySlot);
@@ -112,7 +112,7 @@ public abstract class InventoryUIBase : MonoBehaviour
                 }
                 else if (clickedSlotUI.InventorySlot.SlotLeftInStack(mouseObject.InventorySlot.StackSize, out int remainingAmount))
                 {
-                    if (remainingAmount < 1) SwapSlots(clickedSlotUI); //½ºÅÃÀÌ °¡µæ Ã¡À» ¶§
+                    if (remainingAmount < 1) SwapSlots(clickedSlotUI); //ìŠ¤íƒì´ ê°€ë“ ì°¼ì„ ë•Œ
                     else
                     {
                         int remainMouse = mouseObject.InventorySlot.StackSize - remainingAmount;
@@ -131,7 +131,7 @@ public abstract class InventoryUIBase : MonoBehaviour
 
     protected virtual void SetEmptySlot(InventorySlotUI clickedSlotUI)
     {
-        //¸¶¿ì½º¿¡´Â µ¥ÀÌÅÍ°¡°¡ ÀÖ°í ½½·Ô¿¡´Â µ¥ÀÌÅÍ°¡ ¾øÀ» ½Ã
+        //ë§ˆìš°ìŠ¤ì—ëŠ” ë°ì´í„°ê°€ê°€ ìˆê³  ìŠ¬ë¡¯ì—ëŠ” ë°ì´í„°ê°€ ì—†ì„ ì‹œ
         if (clickedSlotUI.InventorySlot.ItemData == null && mouseObject.InventorySlot.ItemData != null)
         {
             clickedSlotUI.InventorySlot.AssignItem(mouseObject.InventorySlot);
@@ -142,7 +142,7 @@ public abstract class InventoryUIBase : MonoBehaviour
     }
 
 
-    //¸¶¿ì½º¿Í ½½·Ô¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸¦ ±³È¯ÇÕ´Ï´Ù.
+    //ë§ˆìš°ìŠ¤ì™€ ìŠ¬ë¡¯ì— ìˆëŠ” ë°ì´í„°ë¥¼ êµí™˜í•©ë‹ˆë‹¤.
     protected virtual void SwapSlots(InventorySlotUI clickedSlotUI)
     {
         var clonedSlot = new InventorySlot(mouseObject.InventorySlot.ItemData, mouseObject.InventorySlot.StackSize);
@@ -164,7 +164,7 @@ public abstract class InventoryUIBase : MonoBehaviour
     }
 
 
-    //¸¶¿ì½º ÀÌº¥Æ® ¹ÙÀÎµù
+    //ë§ˆìš°ìŠ¤ ì´ë²¤íŠ¸ ë°”ì¸ë”©
     protected void BindEvent(InventorySlotUI slotUI, EventTrigger eventTrigger, EventTriggerType triggerType, Action<BaseEventData, InventorySlotUI> action)
     {
         EventTrigger.Entry entry = new EventTrigger.Entry();

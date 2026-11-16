@@ -5,7 +5,7 @@ using MackySoft.SerializeReferenceExtensions.Editor;
 [CreateAssetMenu(fileName = "ConsumableData", menuName = "Scriptable Objects/ConsumableData")]
 public class ConsumableData : ItemData
 {
-    [Header("¼Ò¸ğÇ° ¾ÆÀÌÅÛ ¼Ó¼º")]
+    [Header("ì†Œëª¨í’ˆ ì•„ì´í…œ ì†ì„±")]
     [SerializeField] private float coolTime;
 
     [SerializeReference,SubclassSelector] private List<ItemEffect> effects;

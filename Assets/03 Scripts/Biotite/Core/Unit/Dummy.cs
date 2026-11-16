@@ -16,10 +16,10 @@ public class Dummy : Unit, IDmgAble
     {
         Managers.Audio.PlaySfx(KeyDefines.SoundKey.HitSfx);
         
-        //È÷Æ® Æ÷ÀÎÆ® uiµµ ¿ÀºêÁ§Æ® ¸Å´ÏÀú·Î À§ÀÓ
+        //íˆíŠ¸ í¬ì¸íŠ¸ uië„ ì˜¤ë¸Œì íŠ¸ ë§¤ë‹ˆì €ë¡œ ìœ„ì„
         //GameObject hitPoint = Managers.Data.GetData<GameObject>("Hit Point");
 
-        //³ªÁß¿¡ ¿ÀºêÁ§Æ® ¸Å´ÏÀú·Î À§ÀÓ
+        //ë‚˜ì¤‘ì— ì˜¤ë¸Œì íŠ¸ ë§¤ë‹ˆì €ë¡œ ìœ„ì„
         Managers.Object.CreateDamageText(10,EHitType.Head,transform.position + new Vector3(0,1,0),Quaternion.identity);
 
         transform.DOComplete();

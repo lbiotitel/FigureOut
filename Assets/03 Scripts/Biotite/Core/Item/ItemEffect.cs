@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//¾ÆÀÌÅÛ »ç¿ë È¿°ú¸¦ Á¤ÀÇÇÕ´Ï´Ù.
+//ì•„ì´í…œ ì‚¬ìš© íš¨ê³¼ë¥¼ ì •ì˜í•©ë‹ˆë‹¤.
 
 [Serializable]
 public abstract class ItemEffect 

@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-//Áï½Ã ¹ßµ¿µÇ´Â ¾ÆÀÌÅÛÀÇ È¿°ú¸¦ Á¤ÀÇÇÕ´Ï´Ù.
+//ì¦‰ì‹œ ë°œë™ë˜ëŠ” ì•„ì´í…œì˜ íš¨ê³¼ë¥¼ ì •ì˜í•©ë‹ˆë‹¤.
 [Serializable]
 public class ImpactEffect : ItemEffect
 {
@@ -25,12 +25,12 @@ public class ImpactEffect : ItemEffect
     public override string BuildDescription()
     {
 
-        string res = "\nÈ¿°ú : ";
+        string res = "\níš¨ê³¼ : ";
 
         for (int i = 0; i < statContainers.Count; i++)
         {
-            string effect = statContainers[i].value > 0 ? "Áõ°¡" : "°¨¼Ò";
-            res += $"{statContainers[i].statType.ToString()}À» {statContainers[i].value}¸¸Å­ {effect}\n";
+            string effect = statContainers[i].value > 0 ? "ì¦ê°€" : "ê°ì†Œ";
+            res += $"{statContainers[i].statType.ToString()}ì„ {statContainers[i].value}ë§Œí¼ {effect}\n";
         }
 
         return res;

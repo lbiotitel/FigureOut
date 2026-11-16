@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Àç·á¸ğÀ¸±â³ª »ç³ÉÄù½ºÆ®°°Àº Ä«¿îÆ® Äù½ºÆ®ÀÇ º£ÀÌ½º Å¬·¡½º
+//ì¬ë£Œëª¨ìœ¼ê¸°ë‚˜ ì‚¬ëƒ¥í€˜ìŠ¤íŠ¸ê°™ì€ ì¹´ìš´íŠ¸ í€˜ìŠ¤íŠ¸ì˜ ë² ì´ìŠ¤ í´ë˜ìŠ¤
 public class CountedQuest : QuestBase
 {
     protected int[] currentCount;
@@ -31,7 +31,7 @@ public class CountedQuest : QuestBase
             }
         }
 
-        //¿Ï·á
+        //ì™„ë£Œ
         UpdateQuestState(EQuestState.Completed);
     }
 

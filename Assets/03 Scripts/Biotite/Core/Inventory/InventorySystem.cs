@@ -34,10 +34,10 @@ public class InventorySystem
         OnSortedSlots?.Invoke(inventorySlots);
     }
 
-    //¾ÆÀÌÅÛ Ãß°¡
+    //ì•„ì´í…œ ì¶”ê°€
     public virtual bool AddToInventory(ItemData itemData, int amountToAdd)
     {
-        //ÀÌ¹Ì ¾ÆÀÌÅÛÀÌ Á¸ÀçÇÏ¸é ½ºÅÃ¿¡ ½×±â
+        //ì´ë¯¸ ì•„ì´í…œì´ ì¡´ì¬í•˜ë©´ ìŠ¤íƒì— ìŒ“ê¸°
         if (ContainsItem(itemData, out List<InventorySlot> invSlots))
         {
             foreach (var slot in invSlots)
@@ -52,7 +52,7 @@ public class InventorySystem
             }
         }
 
-        //¾ÆÀÌÅÛÀÌ »õ·Î¿î ¾ÆÀÌÅÛÀÏ ¶§ 
+        //ì•„ì´í…œì´ ìƒˆë¡œìš´ ì•„ì´í…œì¼ ë•Œ 
         if (HasFreeSlot(out InventorySlot freeSlot))
         {
             if (freeSlot.IsEnoughSlotStack(amountToAdd))
@@ -70,7 +70,7 @@ public class InventorySystem
 
 
 
-    //Æ¯Á¤ ¾ÆÀÌÅÛÀ» amount ¸¸Å­ »èÁ¦ ½ÃÅµ´Ï´Ù.
+    //íŠ¹ì • ì•„ì´í…œì„ amount ë§Œí¼ ì‚­ì œ ì‹œí‚µë‹ˆë‹¤.
     public void RemoveItem(string itemID, int amount = 1)
     {
         int removeAmount = amount;
@@ -98,7 +98,7 @@ public class InventorySystem
     }
 
 
-    //ÇöÀç ¾ÆÀÌµğÀÇ ¾ÆÀÌÅÛ ÀüÃ¼ °¹¼ö¸¦ °¡Á®¿É´Ï´Ù.
+    //í˜„ì¬ ì•„ì´ë””ì˜ ì•„ì´í…œ ì „ì²´ ê°¯ìˆ˜ë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤.
     public int CountItem(string itemID)
     {
         int count = 0;
@@ -112,7 +112,7 @@ public class InventorySystem
         return count;
     }
 
-    //Æ¯Á¤ÇÑ ¾ÆÀÌÅÛ ¾ÆÀÌµğ¿Í ÀÏÄ¡ÇÏ´Â ¾ÆÀÌÅÛ ½½·ÔµéÀ» °¡Á®¿É´Ï´Ù
+    //íŠ¹ì •í•œ ì•„ì´í…œ ì•„ì´ë””ì™€ ì¼ì¹˜í•˜ëŠ” ì•„ì´í…œ ìŠ¬ë¡¯ë“¤ì„ ê°€ì ¸ì˜µë‹ˆë‹¤
     public bool ContainsItem(string itemID, out List<InventorySlot> invSlots)
     {
         invSlots = inventorySlots.Where(i => i.ItemData != null && i.ItemData.ItemID == itemID).ToList();
@@ -124,14 +124,14 @@ public class InventorySystem
         => ContainsItem(itemID, out List<InventorySlot> invSlots);
 
 
-    //¾ÆÀÌÅÛ id ¿Í ÀÏÄ¡ÇÏ´Â ½½·ÔµéÀ» ´Ù °¡Á®¿È
+    //ì•„ì´í…œ id ì™€ ì¼ì¹˜í•˜ëŠ” ìŠ¬ë¡¯ë“¤ì„ ë‹¤ ê°€ì ¸ì˜´
     private bool ContainsItem(ItemData itemData, out List<InventorySlot> invSlots)
     {
         return ContainsItem(itemData.ItemID, out invSlots);
     }
 
 
-    //ºó ½½·ÔÀÌ ÀÖ´Â Áö È®ÀÎ
+    //ë¹ˆ ìŠ¬ë¡¯ì´ ìˆëŠ” ì§€ í™•ì¸
     private bool HasFreeSlot(out InventorySlot freeSlot)
     {
         freeSlot = inventorySlots.FirstOrDefault(i => i.ItemData == null);
@@ -146,7 +146,7 @@ public class InventorySystem
     }
 
 
-    //¸ğµç ¾ÆÀÌÅÛ µ¥ÀÌÅÍ¸¦ »èÁ¦½ÃÅµ´Ï´Ù.
+    //ëª¨ë“  ì•„ì´í…œ ë°ì´í„°ë¥¼ ì‚­ì œì‹œí‚µë‹ˆë‹¤.
     public void ClearItem()
     {
         foreach (var slot in inventorySlots)

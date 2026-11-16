@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using static Unity.Collections.AllocatorManager;
 
 
-//ÁøÈ­ ¾Ö´Ï¸ŞÀÌ¼ÇÀ» ´ã´çÇÏ´Â Å¬·¡½º ÀÔ´Ï´Ù.
+//ì§„í™” ì• ë‹ˆë©”ì´ì…˜ì„ ë‹´ë‹¹í•˜ëŠ” í´ë˜ìŠ¤ ì…ë‹ˆë‹¤.
 public class EvolutionAnimUI : MonoBehaviour
 {
     [SerializeField] private Image equipmentImage;

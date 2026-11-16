@@ -6,17 +6,17 @@ public class ItemToolTip : MonoBehaviour
 {
     [SerializeField] private GameObject uiContent;
 
-    [Header("¾ÆÀÌÅÛ °øÅë ¼Ó¼º")]
+    [Header("ì•„ì´í…œ ê³µí†µ ì†ì„±")]
     [SerializeField] private Image itemImage;
     [SerializeField] private TMP_Text itemNameText;
     [SerializeField] private TMP_Text itemDescText;
 
-    [Header("ÄÁÅ×ÀÌ³Ê")]
+    [Header("ì»¨í…Œì´ë„ˆ")]
     [SerializeField] private GameObject equipmentStatContainer;
     [SerializeField] private GameObject weaponStatContainer;
     [SerializeField] private GameObject durabilityContainer;
 
-    [Header("Àåºñ ¼Ó¼º")]
+    [Header("ì¥ë¹„ ì†ì„±")]
     [SerializeField] private TMP_Text durabilityText;
     [SerializeField] private TMP_Text atkText;
     [SerializeField] private TMP_Text defText;
@@ -29,7 +29,7 @@ public class ItemToolTip : MonoBehaviour
     [SerializeField] private TMP_Text moveSpeedText;
     [SerializeField] private TMP_Text maxHpText;
 
-    [Header("¹«±â ¼Ó¼º")]
+    [Header("ë¬´ê¸° ì†ì„±")]
     [SerializeField] private TMP_Text ammoTypeText;
     [SerializeField] private TMP_Text magazineSizeText;
     [SerializeField] private TMP_Text projectileSpeedText;
@@ -79,7 +79,7 @@ public class ItemToolTip : MonoBehaviour
     }
 
 
-    //È­¸é ¹ÛÀ¸·Î ³ª°¡Áö ¾Ê°Ô À§Ä¡ Á¶Á¤
+    //í™”ë©´ ë°–ìœ¼ë¡œ ë‚˜ê°€ì§€ ì•Šê²Œ ìœ„ì¹˜ ì¡°ì •
     private void SetTooltipPosition(Vector2 targetPosition)
     {
         if (canvas == null) return;
@@ -105,7 +105,7 @@ public class ItemToolTip : MonoBehaviour
     }
 
 
-    //°øÅë µ¥ÀÌÅÍ ±×¸²
+    //ê³µí†µ ë°ì´í„° ê·¸ë¦¼
     private void DrawCommonItemData(ItemData itemData)
     {
         HideAllContainer();
@@ -127,7 +127,7 @@ public class ItemToolTip : MonoBehaviour
 
 
 
-    //°øÅë Àåºñ ¼Ó¼º
+    //ê³µí†µ ì¥ë¹„ ì†ì„±
     private void DrawEquipmentItemData(EquipmentData equipmentData)
     {
         var statList = equipmentData.EquipmentStats;
@@ -162,7 +162,7 @@ public class ItemToolTip : MonoBehaviour
     }
 
 
-    //¹«±â µ¥ÀÌÅÍ ¼Ó¼º
+    //ë¬´ê¸° ë°ì´í„° ì†ì„±
     private void DrawWeaponItemData(WeaponData weaponData)
     {
         if (weaponData is RangedWeaponData) DrawRangedWeaponItemData(weaponData as RangedWeaponData);

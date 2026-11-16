@@ -61,7 +61,7 @@ public class QuestUI : MonoBehaviour
     }
 
     
-    //Äù½ºÆ® ÇÊÅÍ¸µ
+    //í€˜ìŠ¤íŠ¸ í•„í„°ë§
     private void FilterQuests(EQuestState filterState)
     {
         foreach (var questLog in questLogDict)
@@ -99,7 +99,7 @@ public class QuestUI : MonoBehaviour
     }
 
 
-    //Äù½ºÆ® ½ºÅ©·Ñ¿¡ Äù½ºÆ® ·Î±×¸¦ ¸¸µé¾î¼­ µî·Ï
+    //í€˜ìŠ¤íŠ¸ ìŠ¤í¬ë¡¤ì— í€˜ìŠ¤íŠ¸ ë¡œê·¸ë¥¼ ë§Œë“¤ì–´ì„œ ë“±ë¡
     private void HandleQuestRegistedEvent(QuestBase quest)
     {
         QuestLogUI questLogUI = Instantiate(questLogUIPrefab, scrollContentParent.transform).GetComponent<QuestLogUI>();
@@ -109,7 +109,7 @@ public class QuestUI : MonoBehaviour
     }
 
     
-    //Æ¯Á¤ »óÅÂÀÇ Äù½ºÆ®°¡ ¾÷µ¥ÀÌÆ® µÉ ¶§ Äù½ºÆ® ·Î±× UIµµ ¾÷µ¥ÀÌÆ®
+    //íŠ¹ì • ìƒíƒœì˜ í€˜ìŠ¤íŠ¸ê°€ ì—…ë°ì´íŠ¸ ë  ë•Œ í€˜ìŠ¤íŠ¸ ë¡œê·¸ UIë„ ì—…ë°ì´íŠ¸
     private void HandleQuestStateChangedEvent(QuestBase quest)
     {
         if (questLogDict.TryGetValue(quest.QuestData.QuestID, out QuestLogUI questLogUI))
@@ -121,7 +121,7 @@ public class QuestUI : MonoBehaviour
 
 
 
-    //ÇöÀç Å¬¸¯µÈ log uiÀÇ ÀÚ¼¼ÇÑ ³»¿ëÀ» º¸¿©ÁÖ°í ÇöÀç ¼±ÅÃµÈ Äù½ºÆ®¸¦ ¾÷µ¥ÀÌÆ®
+    //í˜„ì¬ í´ë¦­ëœ log uiì˜ ìì„¸í•œ ë‚´ìš©ì„ ë³´ì—¬ì£¼ê³  í˜„ì¬ ì„ íƒëœ í€˜ìŠ¤íŠ¸ë¥¼ ì—…ë°ì´íŠ¸
     private void HandleQuestLogUIClicked(QuestBase quest)
     { 
         selectedQuest = quest;

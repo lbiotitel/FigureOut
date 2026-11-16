@@ -25,16 +25,16 @@ public class DataTableManager : MonoBehaviour
         await LoadResource<GameObject>(key);
         await LoadResource<AudioClip>(key);
 
-        Logger.Log($"{key}¿¡ ´ëÇÑ ·Îµå ¿Ï·á");
+        Logger.Log($"{key}ì— ëŒ€í•œ ë¡œë“œ ì™„ë£Œ");
     }
 
     private async UniTask LoadResource<T>(string key) where T : UnityEngine.Object
     {
-        //¹Ì¸® ÇØ´ç Å°ÀÇ ¸®¼Ò½º°¡ ÀÖ´ÂÁö È®ÀÎ È®ÀÎ ¾ÈÇÏ¸é ¹«ÇÑ ·çÇÎÀ¸·Î ºüÁ®³ª°¡Áö ¸øÇØ¼­ ´ÙÀ½ ¸®¼Ò½º ·Îµå ºÒ°¡
+        //ë¯¸ë¦¬ í•´ë‹¹ í‚¤ì˜ ë¦¬ì†ŒìŠ¤ê°€ ìˆëŠ”ì§€ í™•ì¸ í™•ì¸ ì•ˆí•˜ë©´ ë¬´í•œ ë£¨í•‘ìœ¼ë¡œ ë¹ ì ¸ë‚˜ê°€ì§€ ëª»í•´ì„œ ë‹¤ìŒ ë¦¬ì†ŒìŠ¤ ë¡œë“œ ë¶ˆê°€
         bool isExists = await resourceLoader.IsExists<T>(key);
         if (!isExists)
         {
-            Logger.LogWarning($"{key}Å°ÀÇ {typeof(T)} ¿¡ µî·ÏµÈ ¸®¼Ò½º°¡ ¾ø½À´Ï´Ù.");
+            Logger.LogWarning($"{key}í‚¤ì˜ {typeof(T)} ì— ë“±ë¡ëœ ë¦¬ì†ŒìŠ¤ê°€ ì—†ìŠµë‹ˆë‹¤.");
             return;
         }
 
@@ -108,7 +108,7 @@ public class DataTableManager : MonoBehaviour
     }
 
 
-    //Å¸ÀÔ¿¡ ÇØ´çÇÏ´Â ¾ÆÀÌÅÛ ÀüÃ¼ °¡Á®¿À±â
+    //íƒ€ì…ì— í•´ë‹¹í•˜ëŠ” ì•„ì´í…œ ì „ì²´ ê°€ì ¸ì˜¤ê¸°
     public List<T> GetDatas<T>() where T : UnityEngine.Object
     {
         List<T> result = new List<T>();

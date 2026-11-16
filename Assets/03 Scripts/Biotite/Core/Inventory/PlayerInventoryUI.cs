@@ -100,7 +100,7 @@ public class PlayerInventoryUI : DynamicInventoryUI
         }
     }
 
-    //������ ��Ÿ�� 
+    //아이템 쿨타임
     private async void ItemCoolTime(string code, float time)
     {
         itemCoolTimeDict.Add(code,1);
@@ -109,15 +109,15 @@ public class PlayerInventoryUI : DynamicInventoryUI
     }
 
 
-    //������ ��� ����
+    //아이템 사용 로직
     private void UseItem(InventorySlotUI targetSlot)
     {
-        //�Ҹ�ǰ ������ ��� ����
+        //소모품 아이템만 사용 가능
         ConsumableData consumableData = targetSlot.InventorySlot.ItemData as ConsumableData;
 
         if (consumableData != null)
         {
-            Logger.Log($"{consumableData.ItemName}�� �����");
+            Logger.Log($"{consumableData.ItemName} 사용함");
             List<ItemEffect> itemEffects = consumableData.Effects;
 
             if (itemEffects == null || itemEffects.Count == 0) return;
@@ -134,14 +134,14 @@ public class PlayerInventoryUI : DynamicInventoryUI
                 effect.ExcuteEffect(playerUnit);
             }
 
-            //���� ���� ��Ű�� ui ����
+            //개수를 감소시키고 UI 갱신
             targetSlot.InventorySlot.RemoveFromStack(1);
             targetSlot.UpdateUISlot();
         }
     }
 
 
-    // �ѱ� �߻�� �κ��丮 UI ����
+    // 총기 발사 시 인벤토리 UI 갱신
     private void HandleReloadEvent(InventorySlotDataChanged data)
     {
         List<InventorySlot> inventorySlots = data.inventorySlots;

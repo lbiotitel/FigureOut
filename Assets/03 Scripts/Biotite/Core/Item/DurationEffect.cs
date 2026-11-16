@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Áö¼Ó ¾ÆÀÌÅÛ È¿°ú¸¦ Á¤ÀÇÇÕ´Ï´Ù.
+//ì§€ì† ì•„ì´í…œ íš¨ê³¼ë¥¼ ì •ì˜í•©ë‹ˆë‹¤.
 [Serializable]
 public class DurationEffect : ItemEffect
 {
@@ -22,7 +22,7 @@ public class DurationEffect : ItemEffect
     }
 
 
-    //È¿°ú Àû¿ë
+    //íš¨ê³¼ ì ìš©
     private async void ApplyEffect(UnitStat unitStat)
     {
         float t = 0;
@@ -41,12 +41,12 @@ public class DurationEffect : ItemEffect
     public override string BuildDescription()
     {
 
-        string res = "\nÈ¿°ú : ";
+        string res = "\níš¨ê³¼ : ";
 
         for (int i = 0; i < statContainers.Count; i++)
         {
-            string effect = statContainers[i].value > 0 ? "Áõ°¡" : "°¨¼Ò";
-            res += $"{statContainers[i].statType.ToString()}À» {duration}ÃÊµ¿¾È {tickInterval}ÁÖ±â·Î {statContainers[i].value}¸¸Å­ {effect}\n";
+            string effect = statContainers[i].value > 0 ? "ì¦ê°€" : "ê°ì†Œ";
+            res += $"{statContainers[i].statType.ToString()}ì„ {duration}ì´ˆë™ì•ˆ {tickInterval}ì£¼ê¸°ë¡œ {statContainers[i].value}ë§Œí¼ {effect}\n";
         }
 
         return res;

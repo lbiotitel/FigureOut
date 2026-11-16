@@ -13,7 +13,7 @@ public class Printer : MonoBehaviour,IInteractable
                 {
                     position = transform.position,
                     interactableObject = this,
-                    interactText = "ÇÁ¸°ÅÍ »ç¿ëÇÏ±â"
+                    interactText = "í”„ë¦°í„° ì‚¬ìš©í•˜ê¸°"
                 });
         });
     }

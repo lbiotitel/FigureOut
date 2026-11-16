@@ -7,7 +7,7 @@ public class Utils : MonoBehaviour
 {
 
 
-    // t´Â ±â´Ù¸± ½Ã°£ actionÀº ±× ÈÄ ¿¡ ½ÇÇàÇÒ ¸Ş¼­µå ÀÔ´Ï´Ù.
+    // tëŠ” ê¸°ë‹¤ë¦´ ì‹œê°„ actionì€ ê·¸ í›„ ì— ì‹¤í–‰í•  ë©”ì„œë“œ ì…ë‹ˆë‹¤.
     public static async void Delay(float t, Action action)
     {
         await UniTask.WaitForSeconds(t);
@@ -16,7 +16,7 @@ public class Utils : MonoBehaviour
 
 
 
-    //ÇÃ·¹ÀÌ¾î°¡ »óÈ£ÀÛ¿ëÇÏ´Â Áö È®ÀÎÇÏ°í ¸Ş¼­µå¸¦ À§ÀÓÇÏ¿© ½ÇÇàÇÕ´Ï´Ù.
+    //í”Œë ˆì´ì–´ê°€ ìƒí˜¸ì‘ìš©í•˜ëŠ” ì§€ í™•ì¸í•˜ê³  ë©”ì„œë“œë¥¼ ìœ„ì„í•˜ì—¬ ì‹¤í–‰í•©ë‹ˆë‹¤.
     public static void CheckPlayerInteract(Collider other, IInteractable interactableObject, Action<PlayerUnit> action)
     {
         if (other.CompareTag(KeyDefines.TagKey.PLAYER))
@@ -32,7 +32,7 @@ public class Utils : MonoBehaviour
     }
 
 
-    //Àç±ÍÀûÀ¸·Î ÀÚ½ÄÀ» ´Ù Ã£¾Æ Æ¯Á¤ÇÑ ¿ÀºêÁ§Æ®ÀÇ À§Ä¡¸¦ Ã£½À´Ï´Ù.
+    //ì¬ê·€ì ìœ¼ë¡œ ìì‹ì„ ë‹¤ ì°¾ì•„ íŠ¹ì •í•œ ì˜¤ë¸Œì íŠ¸ì˜ ìœ„ì¹˜ë¥¼ ì°¾ìŠµë‹ˆë‹¤.
     public static Transform Find(string name, Transform transform)
     {
         if (name == transform.name)
@@ -40,7 +40,7 @@ public class Utils : MonoBehaviour
             return transform;
         }
 
-        //ÀÚ½ÄÀ» Àç±Í·Î ´Ù Ã£¾Æº½
+        //ìì‹ì„ ì¬ê·€ë¡œ ë‹¤ ì°¾ì•„ë´„
         Transform find = null;
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -53,7 +53,7 @@ public class Utils : MonoBehaviour
     }
 
 
-    //ammotype °ú itemId ¸ÅÇÎ 
+    //ammotype ê³¼ itemId ë§¤í•‘ 
     public class AmmoTypeToItemId
     {
         private static Dictionary<EAmmoType, string> dict = new Dictionary<EAmmoType, string>()
@@ -81,16 +81,16 @@ public class Utils : MonoBehaviour
 
 
 
-    //Å¬·¡½º Å¸ÀÔ¿¡ ¸ÅÇÎµÈ ÇÑ±Û ÀÌ¸§À» ¹İÈ¯ÇÏ´Â Å¬·¡½º ÀÔ´Ï´Ù.
+    //í´ë˜ìŠ¤ íƒ€ì…ì— ë§¤í•‘ëœ í•œê¸€ ì´ë¦„ì„ ë°˜í™˜í•˜ëŠ” í´ë˜ìŠ¤ ì…ë‹ˆë‹¤.
     public class ClassTypeToKor
     {
         private static Dictionary<EClassType, string> dict = new Dictionary<EClassType, string>()
     {
-        { EClassType.Security, "º¸¾È°ü" },
-        { EClassType.Hunter, "ÇåÅÍ" },
-        { EClassType.Observer, "°¨½ÃÀÚ" },
-        { EClassType.Farmer, "³óºÎ" },
-        { EClassType.Fighter, "½Î¿ò²Û" }
+        { EClassType.Security, "ë³´ì•ˆê´€" },
+        { EClassType.Hunter, "í—Œí„°" },
+        { EClassType.Observer, "ê°ì‹œì" },
+        { EClassType.Farmer, "ë†ë¶€" },
+        { EClassType.Fighter, "ì‹¸ì›€ê¾¼" }
     };
 
         public static string GetKor(EClassType classType)
@@ -98,7 +98,7 @@ public class Utils : MonoBehaviour
             if (dict.TryGetValue(classType, out string kor))
                 return kor;
             else
-                return "¾Ë ¼ö ¾ø´Â Å¬·¡½º";
+                return "ì•Œ ìˆ˜ ì—†ëŠ” í´ë˜ìŠ¤";
         }
     }
 
@@ -106,12 +106,12 @@ public class Utils : MonoBehaviour
     {
         private static Dictionary<EElementType, string> dict = new Dictionary<EElementType, string>()
         {
-            {EElementType.Ignite, "È­»ó" },
-            {EElementType.Freeze, "ºù°á" },
-            {EElementType.Irradiation, "¼è¾à" },
-            {EElementType.Corrosion, "ºÎ½Ä" },
-            {EElementType.Marked, "Ç¥½Ä" },
-            {EElementType.Injury, "ºÎ»ó" }
+            {EElementType.Ignite, "í™”ìƒ" },
+            {EElementType.Freeze, "ë¹™ê²°" },
+            {EElementType.Irradiation, "ì‡ ì•½" },
+            {EElementType.Corrosion, "ë¶€ì‹" },
+            {EElementType.Marked, "í‘œì‹" },
+            {EElementType.Injury, "ë¶€ìƒ" }
         };
 
         public static string GetKor(EElementType elementType)
@@ -119,7 +119,7 @@ public class Utils : MonoBehaviour
             if (dict.TryGetValue(elementType, out string kor))
                 return kor;
             else
-                return "¾Ë ¼ö ¾ø´Â ¿ø¼Ò";
+                return "ì•Œ ìˆ˜ ì—†ëŠ” ì›ì†Œ";
         }
     }
 
@@ -128,10 +128,10 @@ public class Utils : MonoBehaviour
     {
         private static Dictionary<string, Vector3> wayPointDict = new Dictionary<string, Vector3>()
         {
-            { "ºÎ¶û¾ÆµéÀÇÀº½ÅÃ³", new Vector3(10.51f,0,186.81f) },
-            { "¿ì¿ïÇÑ¹«±âÃ¢°í", new Vector3(186f, 0.4f, 133f) },
-            { "È£È­·Î¿ü´ø¸¶À»", new Vector3(120,0,103) },
-            { "È²±İÇâ", new Vector3(233,0,12) },
+            { "ë¶€ë‘ì•„ë“¤ì˜ì€ì‹ ì²˜", new Vector3(10.51f,0,186.81f) },
+            { "ìš°ìš¸í•œë¬´ê¸°ì°½ê³ ", new Vector3(186f, 0.4f, 133f) },
+            { "í˜¸í™”ë¡œì› ë˜ë§ˆì„", new Vector3(120,0,103) },
+            { "í™©ê¸ˆí–¥", new Vector3(233,0,12) },
         };
 
         public static Vector3 GetWayPointPos(string wayPointName)

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-//ºô´õ ÆĞÅÏÀ» È°¿ëÇÑ ¾À °ü¸®ÀÚ ÀÔ´Ï´Ù.
+//ë¹Œë” íŒ¨í„´ì„ í™œìš©í•œ ì”¬ ê´€ë¦¬ì ì…ë‹ˆë‹¤.
 public class SceneController : MonoBehaviour,IManager
 {
     [SerializeField] private LoadingUI loadingUI;
@@ -34,7 +34,7 @@ public class SceneController : MonoBehaviour,IManager
     }
 
 
-    //Â÷·Ê´ë·Î µî·ÏµÈ ½ÇÇà¼ø¼­¿¡ µû¶ó ½ÇÇà
+    //ì°¨ë¡€ëŒ€ë¡œ ë“±ë¡ëœ ì‹¤í–‰ìˆœì„œì— ë”°ë¼ ì‹¤í–‰
     private async UniTask ChangeSceneSequence(SceneTransitionPlan plan)
     {
         if (plan.Overlay)
@@ -48,10 +48,10 @@ public class SceneController : MonoBehaviour,IManager
             await UnloadScene(sceneName);
         }
 
-        //¸®¼Ò½ºµé ¾ğ·Îµå
+        //ë¦¬ì†ŒìŠ¤ë“¤ ì–¸ë¡œë“œ
         if(plan.ResourcesToUnload) Managers.Data.UnLoadResource();
 
-        //¸®¼Ò½ºµé ·Îµå
+        //ë¦¬ì†ŒìŠ¤ë“¤ ë¡œë“œ
         foreach (string key in plan.ResourcesToLoad)
         {
             await Managers.Data.LoadResource(key);
@@ -74,7 +74,7 @@ public class SceneController : MonoBehaviour,IManager
         isLoading = false;
     }
 
-    //¾À·Îµå
+    //ì”¬ë¡œë“œ
     private async UniTask LoadScene(string sceneName, bool setActive)
     {
         var op = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
@@ -89,7 +89,7 @@ public class SceneController : MonoBehaviour,IManager
 
         op.allowSceneActivation = true;
 
-        while (op.isDone)
+        while (!op.isDone)
         {
             await UniTask.Yield();
         }
@@ -105,7 +105,7 @@ public class SceneController : MonoBehaviour,IManager
         loadedScenes.Add(sceneName);
     }
 
-    //¾À ¾ğ·Îµå
+    //ì”¬ ì–¸ë¡œë“œ
     private async UniTask UnloadScene(string sceneName)
     {
         if (!loadedScenes.Contains(sceneName)) return;
@@ -114,7 +114,7 @@ public class SceneController : MonoBehaviour,IManager
         var op = SceneManager.UnloadSceneAsync(sceneName);
         if (op == null) return;
 
-        while (op.isDone)
+        while (!op.isDone)
         {
             await UniTask.Yield();
         }
@@ -130,25 +130,25 @@ public class SceneController : MonoBehaviour,IManager
 
 
 
-    //ºô´õ ÆĞÅÏÀ» À§ÇÑ Å¬·¡½º
+    //ë¹Œë” íŒ¨í„´ì„ ìœ„í•œ í´ë˜ìŠ¤
     public class SceneTransitionPlan
     {
-        //¾î¶² ¾ÀÀ» ·Îµå ÇÒ °ÇÁö
+        //ì–´ë–¤ ì”¬ì„ ë¡œë“œ í•  ê±´ì§€
         public List<string> ScenesToLoad { get; } = new List<string>();
 
-        //¾î¶² ¾ÀÀ» ¾ğ·Îµå ÇÒ °ÇÁö
+        //ì–´ë–¤ ì”¬ì„ ì–¸ë¡œë“œ í•  ê±´ì§€
         public List<string> ScenesToUnload { get; } = new List<string>();
         
-        //È°¼ºÈ­ µÈ ¾ÀÀÌ¸§
+        //í™œì„±í™” ëœ ì”¬ì´ë¦„
         public string ActiveSceneName { get; private set; }
 
-        //·ÎµåÇÒ ¸®¼Ò½º Å°µé
+        //ë¡œë“œí•  ë¦¬ì†ŒìŠ¤ í‚¤ë“¤
         public List<string> ResourcesToLoad { get; } = new List<string>();
 
-        //¾ğ·ÎµåÇÒ ¸®¼Ò½º Å°µé
+        //ì–¸ë¡œë“œí•  ë¦¬ì†ŒìŠ¤ í‚¤ë“¤
         public bool ResourcesToUnload { get; private set; } = false;
 
-        //UI¸¦ ÄÑ¼­ ºÎµå·´°Ô ÀüÈ¯ À¯¹«
+        //UIë¥¼ ì¼œì„œ ë¶€ë“œëŸ½ê²Œ ì „í™˜ ìœ ë¬´
         public bool Overlay { get; private set; } = false;
 
         public SceneTransitionPlan Load(string sceneName, bool setActive = false)

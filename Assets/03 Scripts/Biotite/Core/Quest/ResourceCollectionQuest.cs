@@ -15,7 +15,7 @@ public class ResourceCollectionQuest : CountedQuest
         HandleInventoryDataChanged(new InventoryDataChangedEvent { });
     }
 
-    //ÀÎº¥Åä¸® ¾÷µ¥ÀÌÆ® ÀÌº¥Æ®¸¦ ¹Ş¾Æ¼­ Äù½ºÆ® ÁøÇà »óÈ²À» ¾÷µ¥ÀÌÆ®
+    //ì¸ë²¤í† ë¦¬ ì—…ë°ì´íŠ¸ ì´ë²¤íŠ¸ë¥¼ ë°›ì•„ì„œ í€˜ìŠ¤íŠ¸ ì§„í–‰ ìƒí™©ì„ ì—…ë°ì´íŠ¸
     private void HandleInventoryDataChanged(InventoryDataChangedEvent inventoryDataChangedEvent)
     {
 

@@ -84,7 +84,7 @@ public class AudioManager : MonoBehaviour, IManager
             return true;
         }
 
-        Logger.LogWarning($"{audioName}Àº µî·ÏµÇÁö¾ÊÀº ¿Àµğ¿À ÀÔ´Ï´Ù.");
+        Logger.LogWarning($"{audioName}ì€ ë“±ë¡ë˜ì§€ì•Šì€ ì˜¤ë””ì˜¤ ì…ë‹ˆë‹¤.");
 
         return false;
     }

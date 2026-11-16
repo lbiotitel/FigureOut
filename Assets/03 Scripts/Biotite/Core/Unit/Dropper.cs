@@ -5,7 +5,7 @@ using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
 
-// µå·Ó¿¡ °üÇÑ Å¬·¡½º
+// ë“œë¡­ì— ê´€í•œ í´ë˜ìŠ¤
 public class Dropper 
 {
     public readonly float DropRange = 1.5f;
