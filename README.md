@@ -8,7 +8,7 @@
 | 개발 기간 | 2026.05 ~ 2026.06 |
 | 플랫폼 | PC |
 | 사용 기술 | Unity, C#, Addressable, UniTask, ScriptableObject |
-| 플레이 영상 | (링크 추가 예정) |
+| 플레이 영상 | https://youtu.be/t1ltyD3_bxM |
 
 ## 담당 파트
 
